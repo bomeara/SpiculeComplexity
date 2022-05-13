@@ -269,7 +269,7 @@ PruneCombinedToRelevantTaxa <- function(charGenus, charSpecies) {
 	number_having_states <- nrow(dna_with_missing) - number_missing_states
 	dna_with_missing <- dna_with_missing[,number_having_states>=4]
 	rownames(dna_with_missing) <- gsub(" ", "_", rownames(dna_with_missing))
-	dna_DNAbin <- as.DNAbin(dna_with_missing)
+	dna_DNAbin <- ape::as.DNAbin(dna_with_missing)
 	ape::write.nexus.data(dna_DNAbin, file="combined_only_relevant_aligned_pruned.nex")
 	print("now open this in mesquite and save as combined_only_relevant_aligned_pruned_for_mb.nex")
 }

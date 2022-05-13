@@ -1,14 +1,15 @@
 library(targets)
 source("functions.R")
 tar_option_set(packages=c("phylotaR", "ape", "Biostrings", "apex"))
+try(system("mkdir sponges"))
 # tar_invalidate(reduced)
 # tar_invalidate(save_genes)
 # tar_invalidate(process_genes)
 #tar_invalidate(gaps_removed)
 #tar_invalidate(dna_combined)
-tar_invalidate(concatenate_all)
-tar_invalidate(partitions)
-tar_invalidate(raxmlrun)
+#tar_invalidate(concatenate_all)
+#tar_invalidate(partitions)
+#tar_invalidate(raxmlrun)
 
 
 list(
@@ -22,10 +23,9 @@ list(
  tar_target(selected, phylotaR::drop_clstrs(phylota = all_clusters, cid = keep)),
  tar_target(reduced, phylotaR::drop_by_rank(phylota = selected, rnk = 'species', n = 1)),
  tar_target(save_genes, SaveGenes(reduced)),
- tar_target(process_genes, ProcessSequencesByGeneSingle(save_genes)),
+ tar_target(process_genes, ProcessSequencesByDoIndividualGeneSections(save_genes)),
  tar_target(gaps_removed, RemoveGappy(process_genes)),
- tar_target(dna_combined, apex::read.multiFASTA(gaps_removed)
- ),
+ tar_target(dna_combined, apex::read.multiFASTA(gaps_removed)),
  tar_target(concatenate_all, ConcatenateAll(dna_combined)),
  tar_target(partitions, CreatePartitionFile(dna_combined)),
  tar_target(raxmlrun, RunRaxml(concatenate_all, partitions))

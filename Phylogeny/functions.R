@@ -95,7 +95,19 @@ ProcessSequencesByGeneSingle <- function(inputs) {
 	return(outputs)
 }
 
+ProcessSequencesByDoIndividualGeneSections <- function(inputs) {
+	try(system("mkdir seqs_processed"))
+	system("rm seqs_processed/*.fasta")
+	for (i in seq_along(inputs)) {
+		system(paste0('mafft --thread 3 --adjustdirectionaccurately --auto seqs_raw/', inputs[i], ' > seqs_processed/Aligned_', inputs[i]))
+	}
+
+	outputs <- list.files(path="seqs_processed", pattern="Aligned.*.fasta")
+	return(outputs)
+}
+
 RemoveGappy <- function(inputs) {
+	try(system("mkdir seqs_gappy_removed"))
 	system("rm seqs_gappy_removed/*.fasta")
 	#inputs <- list.files(path="seqs_processed", pattern="Aligned.*.fasta")
 	for (i in seq_along(inputs)) {
