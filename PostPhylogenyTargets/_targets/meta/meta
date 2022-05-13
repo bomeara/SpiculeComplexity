@@ -1,82 +1,56 @@
-name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
-complexity|stem|21aae135d98acca4|9524204cbf8bdab6|80dd7b7b84194012|-1916611357||t19096.8537378093s|91a33ba597ead598|1604|rds|vector|||1.283|package ape was built under R version 4.1.2|
-paleodb_tree|stem|c045a520be0572b5|a49f93d951e4f150|9e541e339d962b13|1108030997||t19096.869757995s|92da9353c4bbe271|259851|rds|vector|||1384.059||
-charGenus|stem|a6f88d49ac0b3d5a|a03eae9849e6530c|bc9d1d76682b2a6c|-750322595||t19096.869759415s|e4cccb495d46a2e0|765|rds|vector|||0.038||
-charSpecies|stem|13dd2a561a876ff4|a6aa4bb8b42c50ae|a9b58f464d74b8f6|-224917202||t19096.8697596051s|c6edbf2a665fb1fa|1412|rds|vector|||0.001||
-ott_trees|stem|e2c1e1bc04e06774|2cee523cd533376b|446d764fce3c3676|227616791||t19096.8702404613s|bfe35851862523c7|381699|rds|vector|||40.131|NAs introduced by coercion|
-constraints|stem|0099bce75cfd5c97|6f54f1506b2a8df6|c00abe3e1a5f656d|240397449||t19096.8780198083s|d684f705bfc01b27|13033814|rds|vector|||4.619|package ape was built under R version 4.1.2|
-paleodb_ages|stem|c146973fcbb74f12|94fb5658a57684cb|c3b5fc02cdc369c1|-1220779832||t19096.887640365s|1873a9e60ad3aaf0|164759|rds|vector|||6.39|package ape was built under R version 4.1.2|
-print_tip_constraitns|stem|976058a9a405965f|be3df745b2e290bc|4ef6b404f98ad37e|1322723210||t19096.8923065305s|a1c456b03adbfbf8|44|rds|vector|||3.418|package ape was built under R version 4.1.2|
-print_mrbayes_batch_file|stem|976058a9a405965f|4324a039cb33f161|5f82d371f0857fb4|-448967178||t19097.6778548938s|a1c456b03adbfbf8|44|rds|vector|||2.681|package ape was built under R version 4.1.2|
-print_tip_constraints|stem|976058a9a405965f|be3df745b2e290bc|99215319a3d81dc9|-1023055062||t19097.6778612125s|a1c456b03adbfbf8|44|rds|vector|||0.48||
-print_constraints|stem|976058a9a405965f|e312e55c0e97f7c8|94acb17b5100d941|-2102323965||t19097.6778685595s|a1c456b03adbfbf8|44|rds|vector|||0.287||
-paleodb_treedata|stem|f1670c4bd0cddd48|70a521632e9d7dd2|79236d51fcc6baf1|293491230||t19097.7885492315s|1efc6515c28c77d1|223170|rds|vector|||3.522|The following tips were not found in phy and were dropped from data Aaptos Achramorpha Amphimedon Amphimedon Amphoriscus Anamixilla Arthuria Asbestopluma Ascaltis Ascandra Ascoleucetta Axinella Axociella Bathydorus Bolosoma Borojevia Burtonulla Chonelasma Clathria Clathrina Cliona Cliona Conciliospongia Conorete Corticium Cymbastela Cystospongia Darwinella Dictyoplax Ernstia Grantessa Haljalaspongia Heteropia Higginsia Holascus Homaxinella Hymedesmia Lelapiella Leucaltis Leucandra Leucascus Leucetta Leucilla Megapogon Monoplectroninia Myrmekioderma Neofibularia Niphates Nubes Pericharax Petrosia Phakellia Pheronema Pheronemoides Pione Plakina Plakinastrella Plakinastrella Plakinastrella Plakortis Platylistrum Poliopogon Poliopogon Polymastia Polymastia Prosuberites Radiella Reniochalina Rhabdastrella Saccocalyx Sarsinella Scyphidium Semperella Sphaerotylus Stylissa Suberites Suberites Tentorium Tethya Tethytimea Tretocalia Uteopsis Vosmaeropsis Weberella|
-paleodb_matched_tree|stem|b922dc9c5afb00a6|68f65f5e5d4b72ea|df528d105b6b6b7d|1002952971||t19097.7885503102s|37f9daeeb358bd64|222825|rds|vector|||0.001||
-paleodb_matched_data|stem|91b041007dd3e532|1b586669e1f6f0c2|37ba524f14cca640|-1313266522||t19097.7885504071s|53ebb00e2399067e|355|rds|vector|||0.001||
-raxml_tree|stem|bb2c359db9bcba93|9e8e7b389fb8f91b|e5b8fe6f81cd458c|-1134086366||t19097.8168294946s|39bdf3b73a5f7cea|22259|rds|vector|||3.517|package ape was built under R version 4.1.2|
-raxml_treedata|stem|26369dffc1b84789|3d661b666ed31cc1|8b8d1259ad8ff845|1534554698||t19097.8168328907s|c77f59b16d456df2|1652|rds|vector|||0.162|The following tips were not found in phy and were dropped from data Arthuria Axociella Bactronella Becksia Bolosoma Brachiospongia Conciliospongia Crumillospongia Cystospongia Eurete Haljalaspongia Hamptonia Hintzespongia Homaxinella Ischnspongia Monoplectroninia Nubes Periphragella Pheronema Platylistrum Plectroninia Plectroninia Ptilispongia Scyphidium Stereodictyum Stioderma Stromatidium Tretocalia Valospongia Vosmaeropsis|
-raxml_matched_data|stem|093877ef2e91b043|6914fee269c6a0ee|1b6f907f7bff9c6d|-1369889173||t19097.8168332354s|08b21799d0b69354|918|rds|vector|||0.001||
-raxml_matched_tree|stem|c969bf7fb0f2b5b8|9953ee4b6d56a501|ab039753b4576ab8|-622838280||t19097.8168333549s|dc82c91ba58c93c7|1352|rds|vector|||0.001||
-dated_paleodb_tree|stem|7788e51190d7d703|10892cd4682b863b|74db1dafda540c01|-115042331||t19097.8171271553s|bcab0d65587d4a44|222892|rds|vector|||25.196||
-dated_raxml_tree|stem|b8c1d8e229a6618d|fe5eddf71b51366d|b1ba946647b7b9d6|1917212999||t19097.8171461121s|5d37e50e702fd324|3752|rds|vector|||1.544|Maximum number of dual iterations reached.|
-paleodb_treedata2|stem|e62316a744ff4b2b|0907f402cfb1b378|74e3d56ca25a1082|-1935108593||t19097.8191798483s|69475e4f3acc9904|223129|rds|vector|||4.453|The following tips were not found in phy and were dropped from data Aaptos Achramorpha Amphimedon Amphimedon Amphoriscus Anamixilla Arthuria Asbestopluma Ascaltis Ascandra Ascoleucetta Axinella Axociella Bactronella Bathydorus Bolosoma Borojevia Burtonulla Chonelasma Clathria Clathrina Cliona Cliona Conciliospongia Conorete Corticium Cymbastela Cystospongia Darwinella Dictyoplax Ernstia Eurete Farrea Grantessa Halichondria Haljalaspongia Heteropia Hexactinella Higginsia Holascus Homaxinella Hymedesmia Lelapiella Leucaltis Leucandra Leucascus Leucetta Leucilla Megapogon Monoplectroninia Myrmekioderma Neofibularia Niphates Nubes Pericharax Periphragella Petrosia Phakellia Pheronema Pheronemoides Pione Plakina Plakinastrella Plakinastrella Plakinastrella Plakortis Platylistrum Plectroninia Plectroninia Poliopogon Poliopogon Polymastia Polymastia Prosuberites Radiella Reniochalina Rhabdastrella Saccocalyx Sarsinella Scyphidium Semperella Sphaerotylus Stylissa Suberites Suberites Tentorium Tethya Tethytimea Tretocalia Tretodictyum Tretodictyum Uteopsis Valospongia Verrucocoeloidea Vosmaeropsis Weberella|
-paleodb_matched_tree2|stem|7788e51190d7d703|81aaf1c76738d604|58bb6e4584085649|137614716||t19097.819201264s|bcab0d65587d4a44|222892|rds|vector|||0.001||
-paleodb_matched_data2|stem|2c55a1ab34e401e3|d8f6829afb5f7bbc|e74fe21b89947bbe|-1105880646||t19097.819201464s|efa41a4afcb89295|262|rds|vector|||0||
-dated_paleodb_tree2|stem|7788e51190d7d703|81aaf1c76738d604|58bb6e4584085649|170283459||t19097.8196652347s|bcab0d65587d4a44|222892|rds|vector|||3.381|package ape was built under R version 4.1.2|
-raxml_contmap|stem|cf5c5ae83c9b26cf|3cb1ead3c30b63a7|94abeaa0c7c7b5ec|-1820054202||t19097.8227250638s|40b3a10246f0095b|83|rds|vector|||4.867|package ape was built under R version 4.1.2|
-paleodb_contmap|stem|cf5c5ae83c9b26cf|e846ec7af1e3d1fc|ba23fcb23a82533c|-1656949125||t19097.8227283603s|40b3a10246f0095b|83|rds|vector|||0.211||
-run_mb|stem|325bb5102aa4d807|0d9466061569f3cb|d5fa3a8edaeb176c|656269051||t19097.9092231787s|ac45463db19e2cbe|48|rds|vector|||19988.859||
-raxml_BM|stem|8ecb2f9c5c4ba4e2|18c9a18dc9fad7c2|1e63c20df96e79ae|128254915||t19102.9804187302s|7f00985029813331|272|rds|vector|||18.745|package ape was built under R version 4.1.2|
-paleodb_BM|stem|a163fca1bf80a08b|d8315efd210cdb0f|f208c05f7e3cfe17|1421902288||t19102.9804319806s|3359bf05477e5075|269|rds|vector|||1.036||
-bm_output|stem|976058a9a405965f|bf0b727dab5a91a9|df1003462830a394|-415754333||t19102.9804322973s|a1c456b03adbfbf8|44|rds|vector|||0.002||
-MakePaleoDBTreeDated|function|b1759afea23b3638||||||||||||||
-PruneCombinedToRelevantTaxa|function|61bc370205f5a508||||||||||||||
-MakeConstraints|function|a116490de94d2c79||||||||||||||
-plotComplexity|function|982c2641207ad977||||||||||||||
-getComplexity|function|cc6b58ac24e0f35a||||||||||||||
-getGenus|function|83e47b129508c5e6||||||||||||||
-SaveBMOutput|function|1e0b89cd5dda5648||||||||||||||
-getCharSpecies|function|5f34e8e66811576a||||||||||||||
-badLabels|function|b7cb05a1205284bf||||||||||||||
-getPaleoDBTree|function|b1e46d4e8f4bc8b8||||||||||||||
-PrintTipAges|function|ce9cdaebed6a027c||||||||||||||
-GetTreeDataData|function|1fcba2e0f8dc96ae||||||||||||||
-ComputeRates|function|e6ba1ea39c1fc10e||||||||||||||
-PrintConstraints|function|e87e565d1e09ac92||||||||||||||
-getRaxmlTree|function|d3607615ccaa1839||||||||||||||
-dateRaxmlTree|function|9dfeb774881c65c0||||||||||||||
-GenerateTipAges|function|1f03df2ce9cdfdd2||||||||||||||
-GetTreeDataTree|function|70eaa952f88efd63||||||||||||||
-RunMrBayes|function|54ced93005a465c3||||||||||||||
-PrintContMap|function|86ad87db90dbce54||||||||||||||
-PrintMrBayesBatchFile|function|2d3ae4d416e9647a||||||||||||||
-getCleanedRaxmlTreeData|function|167e080173cd82e8||||||||||||||
-getCharGenus|function|4c80cff2cd3bd2b2||||||||||||||
-getOTTTrees|function|9fc005be022f4fcd||||||||||||||
-clean_fasta|stem|976058a9a405965f|9e9f9a07ec10a8eb|8b9f5381e4922223|-638935596||t19111.7510996747s|a1c456b03adbfbf8|44|rds|vector|||38.39|package ape was built under R version 4.1.2|
-MakePaleoDBTreeDated|function|b1759afea23b3638
-PruneCombinedToRelevantTaxa|function|431a235fd822adf5
-MakeConstraints|function|a116490de94d2c79
-plotComplexity|function|982c2641207ad977
-getComplexity|function|cc6b58ac24e0f35a
-getGenus|function|83e47b129508c5e6
-SaveBMOutput|function|1e0b89cd5dda5648
-getCharSpecies|function|5f34e8e66811576a
-badLabels|function|b7cb05a1205284bf
-getPaleoDBTree|function|b1e46d4e8f4bc8b8
-PrintTipAges|function|ce9cdaebed6a027c
-GetTreeDataData|function|1fcba2e0f8dc96ae
-ComputeRates|function|e6ba1ea39c1fc10e
-PrintConstraints|function|e87e565d1e09ac92
-getRaxmlTree|function|d3607615ccaa1839
-dateRaxmlTree|function|9dfeb774881c65c0
-GenerateTipAges|function|1f03df2ce9cdfdd2
-GetTreeDataTree|function|70eaa952f88efd63
-RunMrBayes|function|54ced93005a465c3
-PrintContMap|function|86ad87db90dbce54
-PrintMrBayesBatchFile|function|6c502748b09bad16
-getCleanedRaxmlTreeData|function|167e080173cd82e8
-getCharGenus|function|4c80cff2cd3bd2b2
-getOTTTrees|function|9fc005be022f4fcd
-print_mrbayes_batch_file|stem|976058a9a405965f|4324a039cb33f161|fd440533daf79617|-448967178||t19111.7846512858s|a1c456b03adbfbf8|44|rds|vector|||3.117|package ape was built under R version 4.1.2|
-clean_fasta|stem|976058a9a405965f|9e9f9a07ec10a8eb|6a219a5ceaac4741|-638935596||t19111.7510996747s||44|rds|vector|||238983.716|failed to read sequences, returns NULL|argument charSpecies is missing, with no default
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+badLabels|function|b7cb05a1205284bf|||||||||||||||
+bm_output|stem|976058a9a405965f|bf0b727dab5a91a9|df1003462830a394|-415754333||t19102.9804322973s|a1c456b03adbfbf8|44|rds|local|vector|||0.002||
+charGenus|stem|a6f88d49ac0b3d5a|a03eae9849e6530c|bc9d1d76682b2a6c|-750322595||t19118.7391826605s|e4cccb495d46a2e0|765|rds|local|vector|||0.038||
+charSpecies|stem|13dd2a561a876ff4|a6aa4bb8b42c50ae|a9b58f464d74b8f6|-224917202||t19118.7391826686s|c6edbf2a665fb1fa|1412|rds|local|vector|||0.001||
+clean_fasta|stem|976058a9a405965f|9e9f9a07ec10a8eb|6a219a5ceaac4741|-638935596||t19111.7510996747s||44|rds|local|vector|||98565.281||argument charSpecies is missing, with no default
+complexity|stem|21aae135d98acca4|9524204cbf8bdab6|80dd7b7b84194012|-1916611357||t19118.7391788606s|91a33ba597ead598|1604|rds|local|vector|||1.283|package ape was built under R version 4.1.2|
+ComputeRates|function|e6ba1ea39c1fc10e|||||||||||||||
+constraints|stem|0099bce75cfd5c97|6f54f1506b2a8df6|c00abe3e1a5f656d|240397449||t19118.7391779277s|d684f705bfc01b27|13033814|rds|local|vector|||4.619|package ape was built under R version 4.1.2|
+dated_paleodb_tree|stem|7788e51190d7d703|10892cd4682b863b|74db1dafda540c01|-115042331||t19097.8171271553s|bcab0d65587d4a44|222892|rds|local|vector|||25.196||
+dated_paleodb_tree2|stem|7788e51190d7d703|81aaf1c76738d604|58bb6e4584085649|170283459||t19097.8196652347s|bcab0d65587d4a44|222892|rds|local|vector|||3.381|package ape was built under R version 4.1.2|
+dated_raxml_tree|stem|b8c1d8e229a6618d|fe5eddf71b51366d|b1ba946647b7b9d6|1917212999||t19097.8171461121s|5d37e50e702fd324|3752|rds|local|vector|||1.544|Maximum number of dual iterations reached.|
+dateRaxmlTree|function|9dfeb774881c65c0|||||||||||||||
+GenerateTipAges|function|1f03df2ce9cdfdd2|||||||||||||||
+getCharGenus|function|4c80cff2cd3bd2b2|||||||||||||||
+getCharSpecies|function|5f34e8e66811576a|||||||||||||||
+getCleanedRaxmlTreeData|function|167e080173cd82e8|||||||||||||||
+getComplexity|function|cc6b58ac24e0f35a|||||||||||||||
+getGenus|function|83e47b129508c5e6|||||||||||||||
+getOTTTrees|function|9fc005be022f4fcd|||||||||||||||
+getPaleoDBTree|function|b1e46d4e8f4bc8b8|||||||||||||||
+getRaxmlTree|function|d3607615ccaa1839|||||||||||||||
+GetTreeDataData|function|1fcba2e0f8dc96ae|||||||||||||||
+GetTreeDataTree|function|70eaa952f88efd63|||||||||||||||
+MakeConstraints|function|a116490de94d2c79|||||||||||||||
+MakePaleoDBTreeDated|function|b1759afea23b3638|||||||||||||||
+ott_trees|stem|e2c1e1bc04e06774|2cee523cd533376b|446d764fce3c3676|227616791||t19096.8702404613s|bfe35851862523c7|381699|rds|local|vector|||40.131|NAs introduced by coercion|
+paleodb_ages|stem|c146973fcbb74f12|94fb5658a57684cb|c3b5fc02cdc369c1|-1220779832||t19118.739179815s|1873a9e60ad3aaf0|164759|rds|local|vector|||6.39|package ape was built under R version 4.1.2|
+paleodb_BM|stem|a163fca1bf80a08b|d8315efd210cdb0f|f208c05f7e3cfe17|1421902288||t19102.9804319806s|3359bf05477e5075|269|rds|local|vector|||1.036||
+paleodb_contmap|stem|cf5c5ae83c9b26cf|e846ec7af1e3d1fc|ba23fcb23a82533c|-1656949125||t19097.8227283603s|40b3a10246f0095b|83|rds|local|vector|||0.211||
+paleodb_matched_data|stem|91b041007dd3e532|1b586669e1f6f0c2|37ba524f14cca640|-1313266522||t19097.7885504071s|53ebb00e2399067e|355|rds|local|vector|||0.001||
+paleodb_matched_data2|stem|2c55a1ab34e401e3|d8f6829afb5f7bbc|e74fe21b89947bbe|-1105880646||t19097.819201464s|efa41a4afcb89295|262|rds|local|vector|||0||
+paleodb_matched_tree|stem|b922dc9c5afb00a6|68f65f5e5d4b72ea|df528d105b6b6b7d|1002952971||t19097.7885503102s|37f9daeeb358bd64|222825|rds|local|vector|||0.001||
+paleodb_matched_tree2|stem|7788e51190d7d703|81aaf1c76738d604|58bb6e4584085649|137614716||t19097.819201264s|bcab0d65587d4a44|222892|rds|local|vector|||0.001||
+paleodb_tree|stem|c045a520be0572b5|a49f93d951e4f150|9e541e339d962b13|1108030997||t19118.7391742508s|92da9353c4bbe271|259851|rds|local|vector|||1384.059||
+paleodb_treedata|stem|f1670c4bd0cddd48|70a521632e9d7dd2|79236d51fcc6baf1|293491230||t19097.7885492315s|1efc6515c28c77d1|223170|rds|local|vector|||3.522|The following tips were not found in phy and were dropped from data Aaptos Achramorpha Amphimedon Amphimedon Amphoriscus Anamixilla Arthuria Asbestopluma Ascaltis Ascandra Ascoleucetta Axinella Axociella Bathydorus Bolosoma Borojevia Burtonulla Chonelasma Clathria Clathrina Cliona Cliona Conciliospongia Conorete Corticium Cymbastela Cystospongia Darwinella Dictyoplax Ernstia Grantessa Haljalaspongia Heteropia Higginsia Holascus Homaxinella Hymedesmia Lelapiella Leucaltis Leucandra Leucascus Leucetta Leucilla Megapogon Monoplectroninia Myrmekioderma Neofibularia Niphates Nubes Pericharax Petrosia Phakellia Pheronema Pheronemoides Pione Plakina Plakinastrella Plakinastrella Plakinastrella Plakortis Platylistrum Poliopogon Poliopogon Polymastia Polymastia Prosuberites Radiella Reniochalina Rhabdastrella Saccocalyx Sarsinella Scyphidium Semperella Sphaerotylus Stylissa Suberites Suberites Tentorium Tethya Tethytimea Tretocalia Uteopsis Vosmaeropsis Weberella|
+paleodb_treedata2|stem|e62316a744ff4b2b|0907f402cfb1b378|74e3d56ca25a1082|-1935108593||t19097.8191798483s|69475e4f3acc9904|223129|rds|local|vector|||4.453|The following tips were not found in phy and were dropped from data Aaptos Achramorpha Amphimedon Amphimedon Amphoriscus Anamixilla Arthuria Asbestopluma Ascaltis Ascandra Ascoleucetta Axinella Axociella Bactronella Bathydorus Bolosoma Borojevia Burtonulla Chonelasma Clathria Clathrina Cliona Cliona Conciliospongia Conorete Corticium Cymbastela Cystospongia Darwinella Dictyoplax Ernstia Eurete Farrea Grantessa Halichondria Haljalaspongia Heteropia Hexactinella Higginsia Holascus Homaxinella Hymedesmia Lelapiella Leucaltis Leucandra Leucascus Leucetta Leucilla Megapogon Monoplectroninia Myrmekioderma Neofibularia Niphates Nubes Pericharax Periphragella Petrosia Phakellia Pheronema Pheronemoides Pione Plakina Plakinastrella Plakinastrella Plakinastrella Plakortis Platylistrum Plectroninia Plectroninia Poliopogon Poliopogon Polymastia Polymastia Prosuberites Radiella Reniochalina Rhabdastrella Saccocalyx Sarsinella Scyphidium Semperella Sphaerotylus Stylissa Suberites Suberites Tentorium Tethya Tethytimea Tretocalia Tretodictyum Tretodictyum Uteopsis Valospongia Verrucocoeloidea Vosmaeropsis Weberella|
+plotComplexity|function|982c2641207ad977|||||||||||||||
+print_constraints|stem|976058a9a405965f|e312e55c0e97f7c8|94acb17b5100d941|-2102323965||t19097.6778685595s|a1c456b03adbfbf8|44|rds|local|vector|||0.287||
+print_mrbayes_batch_file|stem|976058a9a405965f|4324a039cb33f161|fd440533daf79617|-448967178||t19118.739182449s|a1c456b03adbfbf8|44|rds|local|vector|||3.117|package ape was built under R version 4.1.2|
+print_tip_constraints|stem|976058a9a405965f|be3df745b2e290bc|99215319a3d81dc9|-1023055062||t19118.7391821261s|a1c456b03adbfbf8|44|rds|local|vector|||0.48||
+print_tip_constraitns|stem|976058a9a405965f|be3df745b2e290bc|4ef6b404f98ad37e|1322723210||t19096.8923065305s|a1c456b03adbfbf8|44|rds|local|vector|||3.418|package ape was built under R version 4.1.2|
+PrintConstraints|function|e87e565d1e09ac92|||||||||||||||
+PrintContMap|function|86ad87db90dbce54|||||||||||||||
+PrintMrBayesBatchFile|function|6c502748b09bad16|||||||||||||||
+PrintTipAges|function|ce9cdaebed6a027c|||||||||||||||
+PruneCombinedToRelevantTaxa|function|431a235fd822adf5|||||||||||||||
+raxml_BM|stem|8ecb2f9c5c4ba4e2|18c9a18dc9fad7c2|1e63c20df96e79ae|128254915||t19102.9804187302s|7f00985029813331|272|rds|local|vector|||18.745|package ape was built under R version 4.1.2|
+raxml_contmap|stem|cf5c5ae83c9b26cf|3cb1ead3c30b63a7|94abeaa0c7c7b5ec|-1820054202||t19097.8227250638s|40b3a10246f0095b|83|rds|local|vector|||4.867|package ape was built under R version 4.1.2|
+raxml_matched_data|stem|093877ef2e91b043|6914fee269c6a0ee|1b6f907f7bff9c6d|-1369889173||t19097.8168332354s|08b21799d0b69354|918|rds|local|vector|||0.001||
+raxml_matched_tree|stem|c969bf7fb0f2b5b8|9953ee4b6d56a501|ab039753b4576ab8|-622838280||t19097.8168333549s|dc82c91ba58c93c7|1352|rds|local|vector|||0.001||
+raxml_tree|stem|bb2c359db9bcba93|9e8e7b389fb8f91b|e5b8fe6f81cd458c|-1134086366||t19118.7391829265s|39bdf3b73a5f7cea|22259|rds|local|vector|||3.517|package ape was built under R version 4.1.2|
+raxml_treedata|stem|26369dffc1b84789|3d661b666ed31cc1|8b8d1259ad8ff845|1534554698||t19097.8168328907s|c77f59b16d456df2|1652|rds|local|vector|||0.162|The following tips were not found in phy and were dropped from data Arthuria Axociella Bactronella Becksia Bolosoma Brachiospongia Conciliospongia Crumillospongia Cystospongia Eurete Haljalaspongia Hamptonia Hintzespongia Homaxinella Ischnspongia Monoplectroninia Nubes Periphragella Pheronema Platylistrum Plectroninia Plectroninia Ptilispongia Scyphidium Stereodictyum Stioderma Stromatidium Tretocalia Valospongia Vosmaeropsis|
+run_mb|stem|325bb5102aa4d807|0d9466061569f3cb|d5fa3a8edaeb176c|656269051||t19097.9092231787s|ac45463db19e2cbe|48|rds|local|vector|||19988.859||
+RunMrBayes|function|54ced93005a465c3|||||||||||||||
+SaveBMOutput|function|1e0b89cd5dda5648|||||||||||||||
