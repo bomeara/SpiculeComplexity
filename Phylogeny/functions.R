@@ -120,7 +120,16 @@ RemoveGappy <- function(inputs) {
 			}
 		}
 		autoMasked <- maskGaps(dna, min.fraction=min.fraction, min.block.width=1)
-		writeXStringSet(as(autoMasked, "DNAStringSet"),file=paste0("seqs_gappy_removed/", inputs[i]))
+		countGaps <- function(x) {
+			return(sum(x=="-"))
+		}
+		autoMasked2 <- as.matrix(autoMasked)
+		gaps <- apply(autoMasked2, 1, countGaps)
+		gap_fraction <- gaps/ncol(autoMasked2)
+		autoMasked3 <- autoMasked2[gap_fraction<0.2,]
+		if(nrow(autoMasked3)>=4 & ncol(automasked3)>=100) {
+			write.FASTA(as.DNAbin(autoMasked3),file=paste0("seqs_gappy_removed/", inputs[i]))
+		}
 	}
 	outputs <- list.files(path="seqs_gappy_removed", pattern="Aligned.*.fasta", full=TRUE)
 	return(outputs)
