@@ -2,6 +2,11 @@ library(targets)
 source("functions.R")
 tar_option_set(packages=c("phylotaR", "ape", "Biostrings", "apex"))
 try(system("mkdir sponges"))
+try(system("mkdir seqs_raw"))
+try(system("mkdir seqs_processed"))
+try(system("mkdir seqs_gappy_removed"))
+
+
 # tar_invalidate(reduced)
 # tar_invalidate(save_genes)
 # tar_invalidate(process_genes)
@@ -14,7 +19,7 @@ try(system("mkdir sponges"))
 
 list(
  tar_target(wd, file.path(getwd(), 'sponges')),
- tar_target(ncbi_dr, '/usr/local/bin/'),
+ tar_target(ncbi_dr, '/opt/homebrew/bin/'),
  tar_target(txid, 6040), # Porifera
  tar_target(all_clusters, RunPhylotaR(wd=wd, txid=txid, ncbi_dr=ncbi_dr)),
  tar_target(cids, all_clusters@cids),
