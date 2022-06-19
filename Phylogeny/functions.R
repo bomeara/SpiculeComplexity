@@ -108,7 +108,7 @@ ProcessSequencesByDoIndividualGeneSections <- function(inputs) {
 
 RemoveGappy <- function(inputs) {
 	try(system("mkdir seqs_gappy_removed"))
-	system("rm seqs_gappy_removed/*.fasta")
+	try(system("rm seqs_gappy_removed/*.fasta"))
 	#inputs <- list.files(path="seqs_processed", pattern="Aligned.*.fasta")
 	for (i in seq_along(inputs)) {
 		dna <- 	Biostrings::readDNAMultipleAlignment(paste0("seqs_processed/", inputs[i]))
@@ -119,16 +119,19 @@ RemoveGappy <- function(inputs) {
 				min.fraction <- min.fraction.try
 			}
 		}
-		autoMasked <- maskGaps(dna, min.fraction=min.fraction, min.block.width=1)
+		autoMasked <- Biostrings::maskGaps(dna, min.fraction=min.fraction, min.block.width=1)
 		countGaps <- function(x) {
 			return(sum(x=="-"))
 		}
 		autoMasked2 <- as.matrix(autoMasked)
 		gaps <- apply(autoMasked2, 1, countGaps)
 		gap_fraction <- gaps/ncol(autoMasked2)
-		autoMasked3 <- autoMasked2[gap_fraction<0.2,]
-		if(nrow(autoMasked3)>=4 & ncol(automasked3)>=100) {
-			write.FASTA(as.DNAbin(autoMasked3),file=paste0("seqs_gappy_removed/", inputs[i]))
+		autoMasked3 <- NA
+		try(autoMasked3 <- as.matrix(autoMasked2[gap_fraction<0.2,]))
+		if(inherits(autoMasked3,"matrix")) {
+			if(nrow(autoMasked3)>=4 & ncol(autoMasked3)>=100) {
+				write.FASTA(as.DNAbin(autoMasked3),file=paste0("seqs_gappy_removed/", inputs[i]))
+			}
 		}
 	}
 	outputs <- list.files(path="seqs_gappy_removed", pattern="Aligned.*.fasta", full=TRUE)
@@ -136,6 +139,7 @@ RemoveGappy <- function(inputs) {
 }
 
 ConcatenateAll <- function(dna_combined) {
+	try(system("mkdir seqs_final"))
 	concat_dna <- concatenate(dna_combined)
 	rownames(concat_dna) <- gsub(" (voucher|isolate) .*", "", gsub("assembly, .*", "", gsub(" genome ", "", gsub(" complete.*", "", gsub("^ +", "", gsub("^N ", "", gsub(" mitochondri.*", "", gsub("\\d", "", gsub("\\.\\d", "", gsub("\\w\\w\\d\\d", "", rownames(concat_dna)))))))))))
 	concat_dna <- concat_dna[!grepl("\\.", rownames(concat_dna)),]
@@ -146,7 +150,7 @@ ConcatenateAll <- function(dna_combined) {
 	rownames(concat_dna) <- gsub(" ", "_", rownames(concat_dna))
 	concat_dna <- concat_dna[!duplicated(rownames(concat_dna)),]
 	phangorn::write.phyDat(concat_dna, file='seqs_final/combined.seq')
-	
+	ape::write.FASTA(concat_dna, file='seqs_final/combined.fasta')	
 }
 
 CreatePartitionFile <- function(dna_combined) {
@@ -174,12 +178,14 @@ CreatePartitionFile <- function(dna_combined) {
 		,"DNA, othergenes = ", paste(gene_bounds[is_nonfocal], collapse=", "), "\n"
 		), 
 		file='seqs_final/partition.txt')
-		return(c("partition.txt"))
+		return(c("seqs_final/partition.txt"))
 }
 
 RunRaxml <- function(...) {
 	setwd("seqs_final")
-	system('raxmlHPC -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
+	#system('raxml-ng -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
+	system('raxml-ng --all --msa combined.seq --model GTR+G --tree pars{10} --bs-trees 200 --threads 5 --model partition.txt')
+
 	setwd("..")
 	return(TRUE)
 }
