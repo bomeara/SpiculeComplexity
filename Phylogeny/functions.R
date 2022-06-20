@@ -184,8 +184,17 @@ CreatePartitionFile <- function(dna_combined) {
 RunRaxml <- function(...) {
 	setwd("seqs_final")
 	#system('raxml-ng -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s combined.seq -q partition.txt -n combined')
-	system('raxml-ng --all --msa combined.seq --model GTR+G --tree pars{10} --bs-trees 200 --threads 5 --model partition.txt')
+	system('raxml-ng --all --msa combined.seq --model GTR+G --tree pars{10} --bs-trees 100 --brlen unlinked --threads 5 --model partition.txt')
 
 	setwd("..")
+	return(TRUE)
+}
+
+RunIQtree <- function(...) {
+	setwd("seqs_final")
+
+	system("/usr/local/bin/iqtree2 -s combined.seq")
+	setwd("..")
+
 	return(TRUE)
 }
