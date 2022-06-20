@@ -193,7 +193,7 @@ RunRaxml <- function(...) {
 RunIQtree <- function(...) {
 	setwd("seqs_final")
 
-	system("/usr/local/bin/iqtree2 -s combined.seq")
+	system("/usr/local/bin/iqtree2 -s combined.seq -p partition.txt -m GTR+I+G")
 	setwd("..")
 
 	return(TRUE)
