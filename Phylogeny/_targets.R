@@ -37,5 +37,6 @@ list(
  tar_target(dna_combined, apex::read.multiFASTA(gaps_removed)),
  tar_target(concatenate_all, ConcatenateAll(dna_combined)),
  tar_target(partitions, CreatePartitionFile(dna_combined)),
- tar_target(raxmlrun, RunRaxml(concatenate_all, partitions))
+ #tar_target(raxmlrun, RunRaxml(concatenate_all, partitions))
+ tar_target(iqtreerun, RunIQtree(concatenate_all, partitions))
 )
