@@ -1,0 +1,2023 @@
+
+R version 4.2.0 (2022-04-22) -- "Vigorous Calisthenics"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> source("_targets.R")
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:ape’:
+
+    complement
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: phangorn
+mkdir: sponges: File exists
+mkdir: seqs_raw: File exists
+mkdir: seqs_processed: File exists
+mkdir: seqs_gappy_removed: File exists
+> tar_make()
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:ape’:
+
+    complement
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: phangorn
+mkdir: sponges: File exists
+mkdir: seqs_raw: File exists
+mkdir: seqs_processed: File exists
+mkdir: seqs_gappy_removed: File exists
+✔ skip target wd
+✔ skip target ncbi_dr
+✔ skip target txid
+✔ skip target all_clusters
+✔ skip target cids
+✔ skip target n_taxa
+✔ skip target keep
+✔ skip target selected
+✔ skip target reduced
+✔ skip target save_genes
+✔ skip target process_genes
+✔ skip target gaps_removed
+✔ skip target dna_combined
+✔ skip target partitions
+✔ skip target concatenate_all
+• start target iqtreerun
+IQ-TREE multicore version 2.2.0 COVID-edition for Mac OS X 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    OMeara-laptop-2022.local (SSE4.2, 16 GB RAM)
+Command: /usr/local/bin/iqtree2 -s combined.seq -p partition.txt -m GTR+I+G -nt 6
+Seed:    290510 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Jun 20 16:30:46 2022
+Kernel:  SSE2 - 6 threads (8 CPU cores detected)
+
+Reading partition model file partition.txt ...
+Reading alignment file combined.seq ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 2.51613 secs using 110.2% CPU
+WARNING: 980 sites contain only gaps or ambiguous characters.
+Alignment has 1199 sequences with 178967 columns, 36227 distinct patterns
+27707 parsimony-informative, 12364 singleton sites, 138896 constant sites
+                                       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.100125 secs using 566.1% CPU
+   1  Hemigellius_pilosus                     99.68%    failed      0.00%
+   2  Hemigellius_fimbriatus                  99.63%    failed      0.00%
+   3  Chelonaplysilla_erecta                  97.44%    failed      0.00%
+   4  Ircinia_campana                         96.48%    failed      0.00%
+   5  Sarcotragus_spinosulus                  95.62%    failed      0.00%
+   6  Ircinia_variabilis                      98.29%    failed      0.00%
+   7  Ircinia_dendroides                      98.37%    failed      0.00%
+   8  Spongia_officinalis                     98.97%    failed      0.00%
+   9  Sarcotragus_fasciculatus                98.50%    failed      0.00%
+  10  Ircinia_oros                            98.21%    failed      0.00%
+  11  Carteriospongia_contorta                97.32%    failed      0.00%
+  12  Dysidea_arenaria                        96.16%    failed      0.00%
+  13  Psammocinia_bulbosa                     98.71%    failed      0.00%
+  14  Psammocinia_halmiformis                 98.71%    failed      0.00%
+  15  Strepsichordaia_caliciformis            98.18%    failed      0.00%
+  16  Ircinia_felix                           98.31%    failed      0.00%
+  17  Ircinia_strobilina                      94.22%    failed      0.00%
+  18  Igernella_notabilis                     97.41%    failed      0.00%
+  19  Acanthodendrilla_australis              99.40%    failed      0.00%
+  20  Dictyodendrilla_cavernosa               99.26%    failed      0.00%
+  21  Fasciospongia_cavernosa                 98.91%    failed      0.00%
+  22  Spongia_nitens                          95.05%    failed      0.00%
+  23  Sarcotragus_foetidus                    98.50%    failed      0.00%
+  24  Coscinoderma_sporadense                 95.09%    failed      0.00%
+  25  Dactylospongia_elegans                  92.75%    failed      0.00%
+  26  Halisarca_dujardinii                    98.41%    failed      1.91%
+  27  Hyrtios_proteus                         93.58%    failed      0.00%
+  28  Halisarca_caerulea                      99.27%    failed      0.00%
+  29  Smenospongia_conulosa                   98.39%    failed      0.00%
+  30  Dactylospongia_metachromia              92.83%    failed      0.00%
+  31  Dysidea_frondosa                        99.69%    failed      0.00%
+  32  Chondrosia_reniformis                   98.34%    failed      0.00%
+  33  Aplysina_fistularis                     96.32%    failed      0.00%
+  34  Aplysina_cavernicola                    97.82%    failed      0.00%
+  35  Aplysina_aerophoba                      97.23%    failed      0.00%
+  36  Aplysina_insularis                      98.17%    failed      0.00%
+  37  Aplysina_cauliformis                    98.17%    failed      0.00%
+  38  Aplysina_fulva                          96.45%    failed      0.00%
+  39  Aplysina_archeri                        98.17%    failed      0.00%
+  40  Aiolochroia_crassa                      97.60%    failed      0.00%
+  41  Chondrilla_nucula                       96.60%    passed     29.28%
+  42  Verongula_gigantea                      97.75%    failed      0.00%
+  43  Verongula_reiswigi                      98.69%    failed      0.00%
+  44  Verongula_rigida                        98.34%    failed      0.00%
+  45  Hexadella_pruvoti                       98.58%    failed      0.00%
+  46  Hexadella_dedritifera                   98.58%    failed      0.00%
+  47  Hexadella_racovitzai                    97.65%    failed      0.00%
+  48  Ianthella_basta                         97.13%    failed      0.00%
+  49  Anomoianthella_popeae                   97.80%    failed      0.00%
+  50  Anomoianthella_rubra                    98.11%    failed      0.00%
+  51  Ianthella_flabelliformis                98.11%    failed      0.00%
+  52  Ianthella_quadrangulata                 98.11%    failed      0.00%
+  53  Ianthella_reticulata                    98.71%    failed      0.00%
+  54  Porphyria_flintae                       98.43%    failed      0.00%
+  55  Pseudoceratina_durissima                99.03%    failed      0.00%
+  56  Pseudoceratina_purpurea                 99.03%    failed      0.00%
+  57  Pseudoceratina_verrucosa                99.03%    failed      0.00%
+  58  Suberea_clavata                         99.03%    failed      0.00%
+  59  Chondrilla_australiensis                99.30%    failed      0.00%
+  60  Aplysina_lacunosa                       97.24%    failed      0.00%
+  61  Chondrilla_caribensis                   98.41%    failed      0.00%
+  62  Chondrosia_collectrix                   99.26%    failed      0.00%
+  63  Thymosiopsis_conglomerans               98.45%    failed      0.00%
+  64  Chondrilla_mixta                        99.26%    failed      0.00%
+  65  Pseudoceratina_arabica                  98.93%    failed      0.00%
+  66  Vansoestia_caribensis                   98.65%    failed      0.00%
+  67  Ectyoplasia_ferox                       94.83%    failed      0.00%
+  68  Myrmekioderma_gyroderma                 99.35%    failed      0.00%
+  69  Ptilocaulis_marquezi                    99.02%    failed      0.00%
+  70  Acanthella_acuta                        98.58%    failed      0.00%
+  71  Phakellia_ventilabrum                   95.68%    failed      0.00%
+  72  Axinella_infundibuliformis              94.81%    failed      0.00%
+  73  Endectyon_delaubenfelsi                 92.75%    failed      0.00%
+  74  Eurypon_clavigerum                      92.79%    failed      0.00%
+  75  Hymeraphia_verticillata                 96.89%    failed      0.00%
+  76  Raspaciona_aculeata                     92.75%    failed      0.00%
+  77  Raspailia_hispida                       93.58%    failed      0.00%
+  78  Raspailia_ramosa                        93.04%    failed      0.00%
+  79  Halicnemia_gallica                      96.97%    failed      0.00%
+  80  Halicnemia_caledoniensis                96.97%    failed      0.00%
+  81  Phakellia_carduus                       99.02%    failed      0.00%
+  82  Cymbastela_concentrica                  99.02%    failed      0.00%
+  83  Cymbastela_coralliophila                99.02%    failed      0.00%
+  84  Cymbastela_vespertina                   99.02%    failed      0.00%
+  85  Axechina_raspailioides                  95.11%    failed      0.00%
+  86  Axinella_aruensis                       99.02%    failed      0.00%
+  87  Echinodictyum_cancellatum               99.02%    failed      0.00%
+  88  Echinodictyum_clathrioides              99.02%    failed      0.00%
+  89  Echinodictyum_mesenterinum              99.02%    failed      0.00%
+  90  Endectyon_fruticosum                    98.69%    failed      0.00%
+  91  Stylissa_carteri                        99.02%    failed      0.00%
+  92  Stylissa_massa                          98.70%    failed      0.00%
+  93  Thrinacophora_cervicornis               99.02%    failed      0.00%
+  94  Dragmacidon_lunaecharta                 98.98%    failed      0.00%
+  95  Axinella_rugosa                         95.09%    failed      0.00%
+  96  Hymeraphia_breeni                       96.62%    failed      0.00%
+  97  Desmoxya_pelagiae                       97.36%    failed      0.00%
+  98  Heteroxya_beauforti                     99.26%    failed      0.00%
+  99  Heteroxya_corticata                     99.36%    failed      0.00%
+ 100  Axinella_cannabina                      95.76%    failed      0.00%
+ 101  Raspailia_viminalis                     94.97%    failed      0.00%
+ 102  Echinodictyum_asperum                   98.89%    failed      0.00%
+ 103  Plenaster_craigi                        99.37%    failed      0.00%
+ 104  Eurypon_miniaceum                       98.74%    failed      0.00%
+ 105  Hymeraphia_stellifera                   92.76%    failed      0.00%
+ 106  Thrinacophora_rhaphidophora             95.62%    failed      0.00%
+ 107  Axinella_arctica                        99.10%    failed      0.00%
+ 108  Lithoplocamia_lithistoides              98.89%    failed      0.00%
+ 109  Myrmekioderma_rea                       97.43%    failed      0.00%
+ 110  Neofibularia_nolitangere                99.35%    failed      0.00%
+ 111  Neofibularia_hartmani                   98.35%    failed      0.00%
+ 112  Neofibularia_irata                      99.30%    failed      0.00%
+ 113  Rhabderemia_sorokinae                   99.33%    failed      0.00%
+ 114  Biemna_saucia                           99.30%    failed      0.00%
+ 115  Sigmaxinella_hipposiderus               99.30%    failed      0.00%
+ 116  Biemna_megalosigma                      99.30%    failed      0.00%
+ 117  Biemna_caribea                          98.87%    failed      0.00%
+ 118  Scopalina_ruetzleri                     99.02%    failed      0.00%
+ 119  Svenzea_zeai                            96.19%    failed      0.00%
+ 120  Scopalina_lophyropoda                   96.07%    failed      0.00%
+ 121  Tethyspira_spinosa                      96.04%    failed      0.00%
+ 122  Phakettia_euctimena                     99.35%    failed      0.00%
+ 123  Phycopsis_epakros                       99.35%    failed      0.00%
+ 124  Dictyonella_incisa                      96.12%    failed      0.00%
+ 125  Hymerhabdia_typica                      97.35%    failed      0.00%
+ 126  Desmanthus_incrustans                   99.28%    failed      0.00%
+ 127  Liosina_blastifera                      98.90%    failed      0.00%
+ 128  Scopalina_goletensis                    98.92%    failed      0.00%
+ 129  Scopalina_jali                          98.93%    failed      0.00%
+ 130  Scopalina_kuyamu                        98.92%    failed      0.00%
+ 131  Scopalina_nausicae                      98.91%    failed      0.00%
+ 132  Svenzea_cristinae                       96.03%    failed      0.00%
+ 133  Dictyonella_funicularis                 99.04%    failed      0.00%
+ 134  Ulosa_stuposa                           96.75%    failed      0.00%
+ 135  Pione_velans                            98.48%    failed      0.00%
+ 136  Cliona_celata                           98.29%    failed      0.00%
+ 137  Cliona_delitrix                         98.28%    failed      0.00%
+ 138  Pione_vastifica                         99.02%    failed      0.00%
+ 139  Cliona_chilensis                        98.57%    failed      0.00%
+ 140  Clionaopsis_platei                      98.77%    failed      0.00%
+ 141  Placospongia_intermedia                 98.88%    failed      0.00%
+ 142  Placospongia_melobesioides              99.35%    failed      0.00%
+ 143  Placospongia_mixta                      99.35%    failed      0.00%
+ 144  Placospongia_carinata                   99.35%    failed      0.00%
+ 145  Cliona_vermifera                        98.60%    failed      0.00%
+ 146  Spirastrella_cunctatrix                 98.26%    failed      0.00%
+ 147  Spheciospongia_solida                   99.22%    failed      0.00%
+ 148  Cliona_dissimilis                       98.54%    failed      0.00%
+ 149  Cliona_mariae                           99.05%    failed      0.00%
+ 150  Cliona_yorkin                           99.05%    failed      0.00%
+ 151  Cliothosa_aurivillii                    98.75%    failed      0.00%
+ 152  Spirastrella_hartmani                   98.83%    failed      0.00%
+ 153  Cliona_schmidti                         98.58%    failed      0.00%
+ 154  Cliona_tenuis                           98.44%    failed      0.00%
+ 155  Desmacella_austini                      99.66%    failed      0.00%
+ 156  Hamacantha_falcula                      98.67%    failed      0.00%
+ 157  Polymastia_janeirensis                  98.60%    failed      0.00%
+ 158  Polymastia_arctica                      96.10%    failed      0.00%
+ 159  Polymastia_andrica                      96.10%    failed      0.00%
+ 160  Polymastia_boletiformis                 96.10%    failed      0.00%
+ 161  Polymastia_euplectella                  96.11%    failed      0.00%
+ 162  Polymastia_invaginata                   96.11%    failed      0.00%
+ 163  Polymastia_mamillaris                   96.11%    failed      0.00%
+ 164  Polymastia_uberrima                     96.10%    failed      0.00%
+ 165  Quasillina_brevis                       97.28%    failed      0.00%
+ 166  Radiella_hemisphaerica                  97.28%    failed      0.00%
+ 167  Radiella_sarsi                          97.28%    failed      0.00%
+ 168  Sphaerotylus_antarcticus                97.28%    failed      0.00%
+ 169  Sphaerotylus_borealis                   97.28%    failed      0.00%
+ 170  Sphaerotylus_capitatus                  97.28%    failed      0.00%
+ 171  Spinularia_spinularia                   97.28%    failed      0.00%
+ 172  Tentorium_papillatum                    97.28%    failed      0.00%
+ 173  Tentorium_semisuberites                 97.28%    failed      0.00%
+ 174  Weberella_bursa                         97.28%    failed      0.00%
+ 175  Polymastia_corticata                    96.10%    failed      0.00%
+ 176  Polymastia_penicillus                   96.11%    failed      0.00%
+ 177  Polymastia_agglutinans                  98.74%    failed      0.00%
+ 178  Polymastia_grimaldii                    96.11%    failed      0.00%
+ 179  Polymastia_bartletti                    96.11%    failed      0.00%
+ 180  Polymastia_thielei                      96.11%    failed      0.00%
+ 181  Polymastia_isidis                       98.74%    failed      0.00%
+ 182  Sphaerotylus_strobilis                  98.89%    failed      0.00%
+ 183  Polymastia_atlantica                    98.52%    failed      0.00%
+ 184  Vetulina_indica                         98.71%    failed      0.00%
+ 185  Vetulina_rugosa                         98.71%    failed      0.00%
+ 186  Vetulina_stalactites                    99.65%    failed      0.00%
+ 187  Vetulina_incrustans                     99.65%    failed      0.00%
+ 188  Vetulina_tholiformis                    98.69%    failed      0.00%
+ 189  Trochospongilla_pennsylvanica           97.75%    failed      0.00%
+ 190  Ephydatia_cooperensis                   97.47%    failed      0.00%
+ 191  Baikalospongia_bacillifera              98.50%    failed      0.00%
+ 192  Baikalospongia_intermedia               99.07%    failed      0.00%
+ 193  Lubomirskia_baikalensis                 98.51%    failed      0.00%
+ 194  Lubomirskia_abietina                    98.55%    failed      0.00%
+ 195  Swartschewskia_papyracea                98.54%    failed      0.00%
+ 196  Ephydatia_muelleri                      99.04%    failed      0.00%
+ 197  Ephydatia_fluviatilis                   99.04%    failed      0.00%
+ 198  Spongilla_lacustris                     98.09%    failed      0.00%
+ 199  Pachydictyum_globosum                   98.04%    failed      0.00%
+ 200  Spongilla_vastus                        99.04%    failed      0.00%
+ 201  Eunapius_fragilis                       98.88%    failed      0.00%
+ 202  Trochospongilla_horrida                 99.07%    failed      0.00%
+ 203  Baikalospongia_dzhegatajensis           99.06%    failed      0.00%
+ 204  Baikalospongia_recta                    98.41%    failed      0.00%
+ 205  Echinospongilla_brichardi               99.26%    failed      0.00%
+ 206  Eunapius_subterraneus                   98.07%    failed      0.00%
+ 207  Baikalospongia_fungiformis              98.41%    failed      0.00%
+ 208  Baikalospongia_martinsoni               98.41%    failed      0.00%
+ 209  Heteromeyenia_latitenta                 98.90%    failed      0.00%
+ 210  Heteromeyenia_stepanowii                98.94%    failed      0.00%
+ 211  Racekiela_montemflumina                 98.90%    failed      0.00%
+ 212  Corvospongilla_ultima                   98.90%    failed      0.00%
+ 213  Tubella_variabilis                      98.96%    failed      0.00%
+ 214  Eunapius_carteri                        98.88%    failed      0.00%
+ 215  Baikalospongia_robusta                  98.96%    failed      0.00%
+ 216  Duosclera_mackayi                       98.93%    failed      0.00%
+ 217  Heteromeyenia_baileyi                   98.91%    failed      0.00%
+ 218  Pottsiela_aspinosa                      98.91%    failed      0.00%
+ 219  Spongilla_manconiae                     98.91%    failed      0.00%
+ 220  Corvospongilla_siamensis                98.90%    failed      0.00%
+ 221  Suberites_ficus                         98.90%    failed      0.00%
+ 222  Prosuberites_laughlini                  97.96%    failed      0.00%
+ 223  Hymeniacidon_sinapium                   96.96%    failed      0.00%
+ 224  Hymeniacidon_flavia                     98.88%    failed      0.00%
+ 225  Halichondria_okadai                     98.88%    failed      0.00%
+ 226  Halichondria_magniconulosa              97.10%    failed      0.00%
+ 227  Halichondria_melanadocia                95.26%    failed      0.00%
+ 228  Hymeniacidon_heliophila                 97.21%    failed      0.00%
+ 229  Suberites_aurantiacus                   99.02%    failed      0.00%
+ 230  Hymeniacidon_perlevis                   96.98%    failed      0.00%
+ 231  Didiscus_aceratus                       99.02%    failed      0.00%
+ 232  Amorphinopsis_maculosa                  99.02%    failed      0.00%
+ 233  Suberites_pagurorum                     98.90%    failed      0.00%
+ 234  Ciocalypta_carballoi                    98.93%    failed      0.00%
+ 235  Aaptos_aaptos                           97.97%    failed      0.00%
+ 236  Suberites_dandelenae                    99.03%    failed      0.00%
+ 237  Aaptos_papillata                        98.98%    failed      0.00%
+ 238  Hymeniacidon_chloris                    98.88%    failed      0.00%
+ 239  Hymeniacidon_gracilis                   98.88%    failed      0.00%
+ 240  Stylocordyla_chupachups                 99.37%    failed      0.00%
+ 241  Plicatellopsis_fragilis                 99.05%    failed      0.00%
+ 242  Plicatellopsis_antarctica               99.05%    failed      0.00%
+ 243  Pseudosuberites_hyalinus                99.05%    failed      0.00%
+ 244  Pseudosuberites_nudus                   99.05%    failed      0.00%
+ 245  Aaptos_suberitoides                     97.92%    failed      0.00%
+ 246  Stylocordyla_borealis                   99.27%    failed      0.00%
+ 247  Plicatellopsis_bowerbanki               98.91%    failed      0.00%
+ 248  Amorphinopsis_excavans                  97.13%    failed      0.00%
+ 249  Amorphinopsis_fenestrata                98.80%    failed      0.00%
+ 250  Aaptos_nuda                             98.88%    failed      0.00%
+ 251  Halichondria_coerulea                   98.97%    failed      0.00%
+ 252  Topsentia_ophiraphidites                99.25%    failed      0.00%
+ 253  Halichondria_bowerbanki                 97.17%    failed      0.00%
+ 254  Terpios_hoshinota                       99.30%    failed      0.00%
+ 255  Suberites_topsenti                      99.68%    failed      0.00%
+ 256  Paratimea_loennbergi                    98.13%    failed      0.00%
+ 257  Paratimea_hoffmannae                    99.63%    failed      0.00%
+ 258  Tethya_aurantium                        97.64%    failed      0.00%
+ 259  Stelligera_rigida                       99.63%    failed      0.00%
+ 260  Axos_cliftoni                           98.13%    failed      0.00%
+ 261  Tethya_irisae                           99.63%    failed      0.00%
+ 262  Paratimea_camelus                       99.63%    failed      0.00%
+ 263  Paratimea_lalori                        99.63%    failed      0.00%
+ 264  Paratimea_mosambicensis                 99.63%    failed      0.00%
+ 265  Paratimea_oxeata                        99.63%    failed      0.00%
+ 266  Timea_hechteli                          99.63%    failed      0.00%
+ 267  Timea_alcoladoi                         99.69%    failed      0.00%
+ 268  Galaxia_gaviotensis                     99.07%    failed      0.00%
+ 269  Tethya_californiana                     99.05%    failed      0.00%
+ 270  Tethya_seychellensis                    99.07%    failed      0.00%
+ 271  Timea_micraster                         99.14%    failed      0.00%
+ 272  Geodia_papyracea                        96.71%    failed      0.00%
+ 273  Geodia_media                            98.15%    failed      0.00%
+ 274  Stellettinopsis_megastylifera           92.83%    failed      0.00%
+ 275  Cinachyrella_apion                      99.35%    failed      0.00%
+ 276  Cinachyrella_kuekenthali                95.52%    failed      0.00%
+ 277  Geodia_gibberosa                        90.44%    failed      0.00%
+ 278  Geodia_neptuni                          98.37%    failed      0.00%
+ 279  Pachymatisma_normani                    97.20%    failed      0.00%
+ 280  Pachymatisma_johnstonia                 93.31%    failed      0.00%
+ 281  Poecillastra_compressa                  97.99%    failed      0.00%
+ 282  Stelletta_normani                       96.38%    failed      0.00%
+ 283  Geodia_barretti                         91.60%    failed      0.00%
+ 284  Geodia_atlantica                        91.61%    failed      0.00%
+ 285  Geodia_phlegraei                        91.84%    failed      0.00%
+ 286  Geodia_hentscheli                       91.60%    failed      0.00%
+ 287  Geodia_macandrewii                      91.60%    failed      0.00%
+ 288  Geodia_cydonium                         93.42%    failed      0.00%
+ 289  Geodia_californica                      98.16%    failed      0.00%
+ 290  Erylus_aleuticus                        98.53%    failed      0.00%
+ 291  Geodia_vaubani                          98.16%    failed      0.00%
+ 292  Geodia_angulata                         98.16%    failed      0.00%
+ 293  Erylus_deficiens                        97.18%    failed      0.00%
+ 294  Caminus_vulcani                         98.53%    failed      0.00%
+ 295  Erylus_discophorus                      97.17%    failed      0.00%
+ 296  Erylus_mamillaris                       97.18%    failed      0.00%
+ 297  Erylus_expletus                         98.53%    failed      0.00%
+ 298  Geodia_tumulosa                         91.86%    failed      0.00%
+ 299  Stelletta_fibrosa                       92.52%    failed      0.00%
+ 300  Cinachyrella_australiensis              94.75%    failed      0.00%
+ 301  Cinachyrella_schulzei                   93.19%    failed      0.00%
+ 302  Tetilla_leptoderma                      98.34%    failed      0.00%
+ 303  Craniella_zetlandica                    94.60%    failed      0.00%
+ 304  Craniella_cranium                       97.71%    failed      0.00%
+ 305  Alectona_millari                        98.90%    failed      0.00%
+ 306  Characella_pachastrelloides             97.99%    failed      0.00%
+ 307  Rhabdastrella_globostellata             94.12%    failed      0.00%
+ 308  Dercitus_bucklandi                      94.67%    failed      0.00%
+ 309  Thenea_muricata                         98.00%    failed      0.00%
+ 310  Geodia_corticostylifera                 96.51%    failed      0.00%
+ 311  Neamphius_huxleyi                       95.11%    failed      0.00%
+ 312  Stryphnus_ponderosus                    93.54%    failed      0.00%
+ 313  Discodermia_polymorpha                  97.20%    failed      0.00%
+ 314  Geodia_parva                            93.39%    failed      0.00%
+ 315  Geodia_simplicissima                    98.16%    failed      0.00%
+ 316  Thenea_valdiviae                        98.00%    failed      0.00%
+ 317  Stryphnus_fortis                        97.39%    failed      0.00%
+ 318  Pachastrella_nodulosa                   98.04%    failed      0.00%
+ 319  Vulcanella_aberrans                     97.99%    failed      0.00%
+ 320  Vulcanella_gracilis                     98.00%    failed      0.00%
+ 321  Calthropella_geodioides                 97.99%    failed      0.00%
+ 322  Triptolemma_intextum                    97.99%    failed      0.00%
+ 323  Geodia_vosmaeri                         96.66%    failed      0.00%
+ 324  Thenea_abyssorum                        98.00%    failed      0.00%
+ 325  Thenea_levis                            98.00%    failed      0.00%
+ 326  Penares_candidata                       98.57%    failed      0.00%
+ 327  Geodia_megastrella                      96.37%    failed      0.00%
+ 328  Ecionemia_robusta                       97.20%    failed      0.00%
+ 329  Rhabdastrella_intermedia                98.53%    failed      0.00%
+ 330  Rhabdastrella_cordata                   97.19%    failed      0.00%
+ 331  Stelletta_tuberculata                   96.38%    failed      0.00%
+ 332  Erylus_granularis                       97.17%    failed      0.00%
+ 333  Geodia_pachydermata                     98.16%    failed      0.00%
+ 334  Erylus_topsenti                         97.21%    failed      0.00%
+ 335  Stelletta_tuberosa                      96.38%    failed      0.00%
+ 336  Stelletta_clarella                      96.38%    failed      0.00%
+ 337  Thenea_schmidti                         98.01%    failed      0.00%
+ 338  Geodia_conchilega                       96.37%    failed      0.00%
+ 339  Caminella_intuta                        93.42%    failed      0.00%
+ 340  Stelletta_grubii                        92.52%    failed      0.00%
+ 341  Pachastrella_ovisternata                97.99%    failed      0.00%
+ 342  Stelletta_dorsigera                     96.39%    failed      0.00%
+ 343  Stelletta_lactea                        92.52%    failed      0.00%
+ 344  Craniella_sagitta                       94.65%    failed      0.00%
+ 345  Cinachyra_barbata                       94.60%    failed      0.00%
+ 346  Cinachyra_antarctica                    94.72%    failed      0.00%
+ 347  Paratetilla_bacca                       95.83%    failed      0.00%
+ 348  Tetilla_muricyi                         98.95%    failed      0.00%
+ 349  Tetilla_japonica                        93.46%    failed      0.00%
+ 350  Acanthotetilla_walteri                  97.09%    failed      0.00%
+ 351  Acanthotetilla_celebensis               97.72%    failed      0.00%
+ 352  Discodermia_proliferans                 97.20%    failed      0.00%
+ 353  Stelletta_clavosa                       91.69%    failed      0.00%
+ 354  Theonella_deliqua                       98.53%    failed      0.00%
+ 355  Theonella_maricae                       98.53%    failed      0.00%
+ 356  Theonella_swinhoei                      93.09%    failed      0.00%
+ 357  Theonella_xantha                        98.64%    failed      0.00%
+ 358  Isabella_harborbranchi                  98.65%    failed      0.00%
+ 359  Stelletta_anthastra                     98.37%    failed      0.00%
+ 360  Isabella_mirabilis                      98.74%    failed      0.00%
+ 361  Neoschrammeniella_fulvodesmus           97.46%    failed      0.00%
+ 362  Neoaulaxinia_clavata                    99.06%    failed      0.00%
+ 363  Neoaulaxinia_zingiberadix               99.06%    failed      0.00%
+ 364  Antarctotetilla_leptoderma              96.10%    failed      0.00%
+ 365  Antarctotetilla_sagitta                 96.10%    failed      0.00%
+ 366  Antarctotetilla_grandis                 96.10%    failed      0.00%
+ 367  Tetilla_dactyloidea                     98.53%    failed      0.00%
+ 368  Thoosa_calpulli                         96.09%    failed      0.00%
+ 369  Thoosa_mismalolli                       96.08%    failed      0.00%
+ 370  Isabella_tanoa                          98.74%    failed      0.00%
+ 371  Corallistes_isabela                     97.38%    failed      0.00%
+ 372  Corallistes_floreana                    97.38%    failed      0.00%
+ 373  Corallistes_typus                       97.44%    failed      0.00%
+ 374  Racodiscula_radixa                      94.66%    failed      0.00%
+ 375  Racodiscula_seymoura                    97.41%    failed      0.00%
+ 376  Racodiscula_borisi                      94.58%    failed      0.00%
+ 377  Racodiscula_asteroides                  97.33%    failed      0.00%
+ 378  Craniella_wolfi                         93.94%    failed      0.00%
+ 379  Anaderma_rancureli                      97.99%    failed      0.00%
+ 380  Theonella_mirabilis                     94.37%    failed      0.00%
+ 381  Awhiowhio_osheai                        98.61%    failed      0.00%
+ 382  Homophymia_stipitata                    96.08%    failed      0.00%
+ 383  Manihinea_conferta                      94.44%    failed      0.00%
+ 384  Pleroma_turbinatum                      98.08%    failed      0.00%
+ 385  Theonella_cylindrica                    93.75%    failed      0.00%
+ 386  Thoosa_purpurea                         96.12%    failed      0.00%
+ 387  Caminella_caboverdensis                 98.53%    failed      0.00%
+ 388  Caminella_pustula                       97.17%    failed      0.00%
+ 389  Lamellomorpha_strongylata               96.00%    failed      0.00%
+ 390  Lamellomorpha_australis                 99.04%    failed      0.00%
+ 391  Poecillastra_ducitriaena                98.90%    failed      0.00%
+ 392  Exsuperantia_archipelagus               98.17%    failed      0.00%
+ 393  Penares_orthotriaena                    98.52%    failed      0.00%
+ 394  Penares_alatus                          98.52%    failed      0.00%
+ 395  Penares_sphaera                         98.52%    failed      0.00%
+ 396  Sollasipelta_thoosa                     98.88%    failed      0.00%
+ 397  Sollasipelta_cavernicola                98.88%    failed      0.00%
+ 398  Erylus_amorphus                         98.52%    failed      0.00%
+ 399  Erylus_gilchristi                       98.52%    failed      0.00%
+ 400  Geodia_libera                           98.15%    failed      0.00%
+ 401  Tetilla_casula                          98.88%    failed      0.00%
+ 402  Pachastrella_caliculata                 98.88%    failed      0.00%
+ 403  Stelletta_capensis                      98.15%    failed      0.00%
+ 404  Geodia_pocillum                         98.16%    failed      0.00%
+ 405  Geodia_garoupa                          98.16%    failed      0.00%
+ 406  Geodia_nodastrella                      98.16%    failed      0.00%
+ 407  Geodia_margarita                        98.16%    failed      0.00%
+ 408  Geodia_japonica                         98.16%    failed      0.00%
+ 409  Pachymatisma_nodosa                     98.53%    failed      0.00%
+ 410  Penares_euastrum                        97.18%    failed      0.00%
+ 411  Caminus_carmabi                         98.53%    failed      0.00%
+ 412  Caminella_prima                         98.53%    failed      0.00%
+ 413  Neophrissospongia_nolitangere           97.31%    failed      0.00%
+ 414  Macandrewia_azorica                     98.14%    failed      0.00%
+ 415  Discodermia_ramifera                    97.39%    failed      0.00%
+ 416  Melophlus_sarasinorum                   98.60%    failed      0.00%
+ 417  Petromica_pacifica                      99.67%    failed      0.00%
+ 418  Callyspongia_armigera                   99.20%    failed      0.00%
+ 419  Callyspongia_fallax                     99.22%    failed      0.00%
+ 420  Callyspongia_ramosa                     99.20%    failed      0.00%
+ 421  Callyspongia_siphonella                 99.18%    failed      0.00%
+ 422  Callyspongia_diffusa                    99.15%    failed      0.00%
+ 423  Callyspongia_subarmigera                99.15%    failed      0.00%
+ 424  Clathria_prolifera                      92.90%    failed      0.00%
+ 425  Strongylacidon_bermudae                 99.63%    failed      0.00%
+ 426  Mycale_fibrexilis                       99.63%    failed      0.00%
+ 427  Diacarnus_spinipoculum                  99.63%    failed      0.00%
+ 428  Tedania_ignis                           95.51%    failed      0.01%
+ 429  Tedania_klausi                          99.63%    failed      0.00%
+ 430  Artemisina_melana                       96.46%    failed      0.00%
+ 431  Clathria_oxeota                         99.02%    failed      0.00%
+ 432  Clathria_schoenus                       94.63%    failed      0.00%
+ 433  Holopsamma_helwigi                      99.35%    failed      0.00%
+ 434  Iotrochota_birotulata                   97.25%    failed      0.00%
+ 435  Lissodendoryx_isodictyalis              97.75%    failed      0.00%
+ 436  Lissodendoryx_sigmata                   97.75%    failed      0.00%
+ 437  Monanchora_arbuscula                    96.26%    failed      0.00%
+ 438  Mycale_laxissima                        96.25%    failed      0.00%
+ 439  Pandaros_acanthifolium                  99.67%    failed      0.00%
+ 440  Plocamionida_microcionides              99.38%    failed      0.00%
+ 441  Plocamionida_ambigua                    96.42%    failed      0.00%
+ 442  Plocamionida_tylotata                   99.29%    failed      0.00%
+ 443  Desmapsamma_anchorata                   98.63%    failed      0.00%
+ 444  Asbestopluma_hypogea                    99.66%    failed      0.00%
+ 445  Asbestopluma_obae                       99.68%    failed      0.00%
+ 446  Mycale_mirabilis                        94.31%    failed      0.00%
+ 447  Clathria_abietina                       98.95%    failed      0.00%
+ 448  Clathria_cervicornis                    99.03%    failed      0.00%
+ 449  Clathria_cancellaria                    98.96%    failed      0.00%
+ 450  Clathria_reinwardti                     95.12%    failed      0.00%
+ 451  Clathria_kylista                        98.90%    failed      0.00%
+ 452  Clathria_conectens                      99.05%    failed      0.00%
+ 453  Clathria_rugosa                         98.90%    failed      0.00%
+ 454  Paracornulum_dubium                     99.63%    failed      0.00%
+ 455  Monanchora_clathrata                    99.66%    failed      0.00%
+ 456  Iotrochota_baculifera                   99.63%    failed      0.00%
+ 457  Iotrochota_coccinea                     99.63%    failed      0.00%
+ 458  Iotrochota_acerata                      99.63%    failed      0.00%
+ 459  Phelloderma_oxychaetoides               99.65%    failed      0.00%
+ 460  Lycopodina_hypogea                      99.63%    failed      0.00%
+ 461  Acantheurypon_pilosella                 97.71%    failed      0.00%
+ 462  Tsitsikamma_favus                       97.05%    failed      0.00%
+ 463  Asbestopluma_occidentalis               99.65%    failed      0.00%
+ 464  Lissodendoryx_colombiensis              97.81%    failed      0.47%
+ 465  Negombata_magnifica                     97.52%    failed      0.00%
+ 466  Clathria_armata                         95.06%    failed      0.00%
+ 467  Crella_elegans                          97.71%    failed      0.00%
+ 468  Clathria_barleei                        95.05%    failed      0.00%
+ 469  Phorbas_bihamiger                       96.38%    failed      0.00%
+ 470  Sceptrella_biannulata                   97.71%    failed      0.00%
+ 471  Ophlitaspongia_papilla                  97.71%    failed      0.00%
+ 472  Cladorhiza_corallophila                 96.75%    failed      0.00%
+ 473  Hymedesmia_methanophila                 96.35%    failed      0.00%
+ 474  Iophon_methanophila                     97.71%    failed      0.00%
+ 475  Asbestopluma_jamescooki                 96.02%    failed      0.00%
+ 476  Abyssocladia_boletiphora                96.70%    failed      0.00%
+ 477  Chondrocladia_verticillata              97.59%    failed      0.00%
+ 478  Cladorhiza_kenchingtonae                98.27%    failed      0.00%
+ 479  Cladorhiza_oxeata                       96.70%    failed      0.00%
+ 480  Chondrocladia_grandis                   94.09%    failed      0.00%
+ 481  Lycopodina_minuta                       97.81%    failed      1.15%
+ 482  Cladorhiza_methanophila                 96.70%    failed      0.00%
+ 483  Phorbas_topsenti                        95.72%    failed      0.00%
+ 484  Clathria_toxitenuis                     98.24%    failed      0.00%
+ 485  Phorbas_dives                           96.17%    failed      0.00%
+ 486  Myxilla_rosacea                         99.67%    failed      0.00%
+ 487  Mycale_grandis                          99.19%    failed      0.00%
+ 488  Lissodendoryx_hawaiiana                 99.02%    failed      0.00%
+ 489  Iotrochota_protea                       98.79%    failed      0.00%
+ 490  Batzella_aurantiaca                     99.64%    failed      0.00%
+ 491  Acanthorhabdus_fragilis                 99.69%    failed      0.00%
+ 492  Artemisina_jovis                        99.37%    failed      0.00%
+ 493  Artemisina_plumosa                      99.37%    failed      0.00%
+ 494  Artemisina_tubulosa                     99.39%    failed      0.00%
+ 495  Clathria_pauper                         99.09%    failed      0.00%
+ 496  Fibulia_cribriporosa                    99.68%    failed      0.00%
+ 497  Fibulia_maeandrina                      99.68%    failed      0.00%
+ 498  Iophon_unicorne                         99.68%    failed      0.00%
+ 499  Isodictya_kerguelenensis                99.68%    failed      0.00%
+ 500  Isodictya_erinacea                      99.68%    failed      0.00%
+ 501  Kirkpatrickia_variolosa                 99.69%    failed      0.00%
+ 502  Myxilla_mollis                          99.68%    failed      0.00%
+ 503  Phorbas_glaberrimus                     99.37%    failed      0.00%
+ 504  Lissodendoryx_flabellata                99.68%    failed      0.00%
+ 505  Inflatella_coelosphaeroides             99.68%    failed      0.00%
+ 506  Tedania_massa                           99.68%    failed      0.00%
+ 507  Tedania_oxeata                          99.68%    failed      0.00%
+ 508  Tedania_trirhaphis                      99.68%    failed      0.00%
+ 509  Abyssocladia_dominalba                  94.78%    failed      0.00%
+ 510  Asbestopluma_bihamatifera               96.02%    failed      0.00%
+ 511  Asbestopluma_cupressiformis             94.09%    failed      0.00%
+ 512  Asbestopluma_desmophora                 97.59%    failed      0.00%
+ 513  Asbestopluma_furcata                    96.02%    failed      0.00%
+ 514  Asbestopluma_infundibulum               96.02%    failed      0.00%
+ 515  Asbestopluma_lycopodium                 94.09%    failed      0.00%
+ 516  Asbestopluma_pennatula                  94.09%    failed      0.00%
+ 517  Chondrocladia_fatimae                   96.02%    failed      0.00%
+ 518  Chondrocladia_gigantea                  94.09%    failed      0.00%
+ 519  Chondrocladia_lyra                      96.02%    failed      0.00%
+ 520  Chondrocladia_nani                      97.59%    failed      0.00%
+ 521  Chondrocladia_robertballardi            96.02%    failed      0.00%
+ 522  Chondrocladia_vaceleti                  96.02%    failed      0.00%
+ 523  Cladorhiza_corticocancellata            96.70%    failed      0.00%
+ 524  Cladorhiza_gelida                       96.70%    failed      0.00%
+ 525  Cladorhiza_tenuisigma                   96.70%    failed      0.00%
+ 526  Guitarra_antarctica                     95.98%    failed      0.00%
+ 527  Lissodendoryx_complicata                98.70%    failed      0.00%
+ 528  Monanchora_unguiculata                  97.85%    failed      0.00%
+ 529  Hooperia_anfractuosa                    99.26%    failed      0.00%
+ 530  Mycale_antiae                           99.63%    failed      0.00%
+ 531  Kirkpatrickia_coulmani                  99.25%    failed      0.00%
+ 532  Chondrocladia_coronata                  98.07%    failed      0.00%
+ 533  Myxilla_incrustans                      97.71%    failed      0.00%
+ 534  Tedania_tubulifera                      99.63%    failed      0.00%
+ 535  Tedania_scotiae                         99.63%    failed      0.00%
+ 536  Fibulia_ramosa                          99.63%    failed      0.00%
+ 537  Isodictya_elastica                      99.66%    failed      0.00%
+ 538  Phorbas_clathratus                      99.25%    failed      0.00%
+ 539  Ectyonopsis_pluridentata                99.63%    failed      0.00%
+ 540  Mycale_cecilia                          93.42%    failed      0.00%
+ 541  Clathria_curacaoensis                   98.92%    failed      0.00%
+ 542  Clathria_unica                          98.89%    failed      0.00%
+ 543  Lissodendoryx_carolinensis              97.71%    failed      0.00%
+ 544  Oceanapia_bartschi                      99.63%    failed      0.00%
+ 545  Calyx_podatypa                          98.71%    failed      0.00%
+ 546  Calyx_nicaeensis                        98.67%    failed      0.00%
+ 547  Calyx_arcuarius                         99.68%    failed      0.00%
+ 548  Pachypellina_fistulata                  99.68%    failed      0.00%
+ 549  Cribrochalina_vasculum                  99.67%    failed      0.00%
+ 550  Gelliodes_pumila                        99.63%    failed      0.00%
+ 551  Gelliodes_wilsoni                       99.64%    failed      0.00%
+ 552  Haliclona_caerulea                      99.02%    failed      0.00%
+ 553  Haliclona_implexiformis                 99.02%    failed      0.00%
+ 554  Haliclona_tubifera                      99.02%    failed      0.00%
+ 555  Haliclona_manglaris                     99.02%    failed      0.00%
+ 556  Haliclona_cinerea                       99.03%    failed      0.00%
+ 557  Haliclona_simulans                      98.69%    failed      0.00%
+ 558  Haliclona_toxius                        99.03%    failed      0.00%
+ 559  Haliclona_urceolus                      99.07%    failed      0.00%
+ 560  Haliclona_vanderlandi                   99.03%    failed      0.00%
+ 561  Haliclona_xena                          99.03%    failed      0.00%
+ 562  Haliclona_elegans                       98.96%    failed      0.00%
+ 563  Haliclona_vansoesti                     96.28%    failed      0.00%
+ 564  Haliclona_amboinensis                   96.16%    failed      0.00%
+ 565  Haliclona_pigmentifera                  98.87%    failed      0.00%
+ 566  Haliclona_fibulata                      98.87%    failed      0.00%
+ 567  Haliclona_plakophila                    99.04%    failed      0.00%
+ 568  Haliclona_fascigera                     96.24%    failed      0.00%
+ 569  Cladocroce_burapha                      99.25%    failed      0.00%
+ 570  Haliclona_altera                        99.05%    failed      0.00%
+ 571  Haliclona_cnidata                       96.19%    failed      0.00%
+ 572  Haliclona_dancoi                        98.87%    failed      0.00%
+ 573  Haliclona_poecillastroides              98.97%    failed      0.00%
+ 574  Haliclona_cymaeformis                   98.87%    failed      0.00%
+ 575  Haliclona_stilensis                     98.88%    failed      0.00%
+ 576  Haliclona_oculata                       98.88%    failed      0.00%
+ 577  Chalinula_zeae                          99.35%    failed      0.00%
+ 578  Walteria_leuckarti                      93.71%    failed      0.00%
+ 579  Caulophacus_arcticus                    92.97%    failed      0.00%
+ 580  Aphrocallistes_beatrix                  89.64%    failed      0.00%
+ 581  Aspidoscopulia_australia                94.91%    failed      0.00%
+ 582  Aspidoscopulia_ospreya                  94.90%    failed      0.00%
+ 583  Dictyoplax_lecus                        89.48%    failed      0.00%
+ 584  Tretodictyum_tubulosum                  89.19%    failed      0.00%
+ 585  Hexactinella_carolinensis               94.62%    failed      0.00%
+ 586  Rhabdocalyptus_dawsoni                  90.47%    failed      0.00%
+ 587  Rossella_nuda                           90.43%    failed      0.00%
+ 588  Nodastrella_asconemaoida                88.03%    failed      0.00%
+ 589  Aulosaccus_mitsukurii                   96.92%    failed      0.00%
+ 590  Crateromorpha_meyeri                    95.13%    failed      0.00%
+ 591  Bathydorus_spinosus                     93.03%    failed      0.00%
+ 592  Bathydorus_laniger                      87.82%    failed      0.00%
+ 593  Caulophacella_tenuis                    92.88%    failed      0.00%
+ 594  Caulophacus_weddelli                    92.69%    failed      0.00%
+ 595  Caulophacus_valdiviae                   92.69%    failed      0.00%
+ 596  Oopsacas_minuta                         94.23%    failed      0.00%
+ 597  Clathrochone_clathroclada               96.96%    failed      0.00%
+ 598  Docosaccus_maculatus                    89.35%    failed      0.00%
+ 599  Rhabdopectella_tintinnus                93.55%    failed      0.00%
+ 600  Sericolophus_hawaiicus                  96.04%    failed      0.00%
+ 601  Semperella_schulzei                     95.32%    failed      0.00%
+ 602  Rossella_racovitzae                     90.47%    failed      0.00%
+ 603  Rossella_antarctica                     98.41%    failed      0.00%
+ 604  Rossella_fibulata                       98.27%    failed      0.00%
+ 605  Rossella_levis                          98.29%    failed      0.00%
+ 606  Nodastrella_nodastrella                 89.80%    failed      0.00%
+ 607  Conorete_pourtalesi                     90.80%    failed      0.00%
+ 608  Aphrocallistes_vastus                   94.97%    failed      0.00%
+ 609  Rhizophyta_yapensis                     97.94%    failed      0.00%
+ 610  Psilocalyx_wilsoni                      91.48%    failed      0.00%
+ 611  Petrosia_dura                           99.35%    failed      0.00%
+ 612  Xestospongia_testudinaria               97.25%    failed      0.00%
+ 613  Neopetrosia_seriata                     99.36%    failed      0.00%
+ 614  Xestospongia_bergquistia                99.36%    failed      0.00%
+ 615  Petrosia_ficiformis                     97.88%    failed      0.00%
+ 616  Neopetrosia_cristata                    99.27%    failed      0.00%
+ 617  Neopetrosia_dendrocrevacea              98.47%    failed      0.00%
+ 618  Neopetrosia_proxima                     97.47%    failed      0.00%
+ 619  Neopetrosia_sigmafera                   99.25%    failed      0.00%
+ 620  Petrosia_durissima                      99.26%    failed      0.00%
+ 621  Neopetrosia_subtriangularis             99.27%    failed      0.00%
+ 622  Petrosia_weinbergi                      97.26%    failed      0.00%
+ 623  Petrosia_pellasarca                     99.25%    failed      0.00%
+ 624  Neopetrosia_carbonaria                  97.26%    failed      0.00%
+ 625  Oscarella_lobularis                     98.08%    failed      0.00%
+ 626  Corticium_diamantense                   99.67%    failed      0.00%
+ 627  Plakina_nathaliae                       99.67%    failed      0.00%
+ 628  Plakinastrella_osculifera               99.67%    failed      0.00%
+ 629  Plakina_coerulea                        99.64%    failed      0.00%
+ 630  Corticium_vaceleti                      99.67%    failed      0.00%
+ 631  Plakinastrella_onkodes                  98.80%    failed      0.00%
+ 632  Astrosclera_willeyana                   97.80%    failed      0.00%
+ 633  Agelas_axifera                          98.57%    failed      0.00%
+ 634  Agelas_gracilis                         98.57%    failed      0.00%
+ 635  Agelas_novaecaledoniae                  98.57%    failed      0.00%
+ 636  Agelas_mauritiana                       98.57%    failed      0.00%
+ 637  Agelas_nakamurai                        98.57%    failed      0.00%
+ 638  Agelas_nemoechinata                     98.57%    failed      0.00%
+ 639  Agelas_cerebrum                         98.57%    failed      0.00%
+ 640  Agelas_dilatata                         98.57%    failed      0.00%
+ 641  Agelas_oroides                          97.61%    failed      0.00%
+ 642  Agelas_sventres                         98.57%    failed      0.00%
+ 643  Agelas_tubulata                         98.57%    failed      0.00%
+ 644  Agelas_conifera                         97.17%    failed      0.00%
+ 645  Agelas_citrina                          98.57%    failed      0.00%
+ 646  Agelas_clathrodes                       98.57%    failed      0.00%
+ 647  Agelas_dispar                           98.04%    failed      0.00%
+ 648  Agelas_schmidtii                        98.57%    failed      0.00%
+ 649  Agelas_sceptrum                         98.57%    failed      0.00%
+ 650  Ceratoporella_nicholsoni                99.29%    failed      0.00%
+ 651  Agelas_cervicornis                      98.57%    failed      0.00%
+ 652  Stromatospongia_vermicola               99.29%    failed      0.00%
+ 653  Agelas_repens                           98.57%    failed      0.00%
+ 654  Agelas_wiedenmayeri                     98.57%    failed      0.00%
+ 655  Agelas_arborescens                      98.57%    failed      0.00%
+ 656  Amphimedon_compressa                    98.01%    failed      1.94%
+ 657  Microxina_charcoti                      99.68%    failed      0.00%
+ 658  Geodia_vestigifera                      93.25%    failed      0.00%
+ 659  Ecionemia_alata                         93.52%    failed      0.00%
+ 660  Ecionemia_acervus                       93.52%    failed      0.00%
+ 661  Microscleroderma_herdmani               97.48%    failed      0.00%
+ 662  Jaspis_novaezealandiae                  93.53%    failed      0.00%
+ 663  Soleneiscus_radovani                    96.11%    failed      0.00%
+ 664  Soleneiscus_stolonifer                  96.10%    failed      0.00%
+ 665  Levinella_prolifera                     96.10%    failed      0.00%
+ 666  Leucaltis_clathria                      95.66%    failed      0.00%
+ 667  Ernstia_adusta                          96.10%    failed      0.00%
+ 668  Leucetta_villosa                        96.10%    failed      0.00%
+ 669  Murrayona_phanolepis                    97.32%    failed      0.00%
+ 670  Lelapiella_incrustans                   97.32%    failed      0.00%
+ 671  Clathrina_rubra                         96.83%    failed      0.00%
+ 672  Clathrina_clathrus                      96.83%    failed      0.00%
+ 673  Clathrina_blanca                        96.83%    failed      0.00%
+ 674  Borojevia_croatica                      99.03%    failed      0.00%
+ 675  Clathrina_primordialis                  99.51%    failed      0.00%
+ 676  Reidispongia_coerulea                   98.50%    failed      0.00%
+ 677  Ectyoplasia_tabula                      95.33%    failed      0.00%
+ 678  Raspailia_vestigifera                   99.46%    failed      0.00%
+ 679  Raspailia_nuda                          99.24%    failed      0.00%
+ 680  Raspailia_phakellopsis                  95.33%    failed      0.00%
+ 681  Raspailia_topsenti                      98.31%    failed      0.00%
+ 682  Aulospongus_similaustralis              99.26%    failed      0.00%
+ 683  Raspailia_elegans                       99.20%    failed      0.00%
+ 684  Strepsichordaia_lendenfeldi             94.45%    failed      0.00%
+ 685  Cacospongia_mycofijiensis               93.93%    failed      0.00%
+ 686  Carteriospongia_flabellifera            98.30%    failed      0.00%
+ 687  Carteriospongia_foliascens              99.16%    failed      0.00%
+ 688  Fascaplysinopsis_reticulata             94.00%    failed      0.00%
+ 689  Hyrtios_altus                           94.66%    failed      0.00%
+ 690  Lendenfeldia_plicata                    98.29%    failed      0.00%
+ 691  Petrosaspongia_nigra                    98.70%    failed      0.00%
+ 692  Phyllospongia_lamellosa                 94.45%    failed      0.00%
+ 693  Phyllospongia_papyracea                 94.75%    failed      0.00%
+ 694  Smenospongia_aurea                      99.45%    failed      0.00%
+ 695  Strepsichordaia_aliena                  99.16%    failed      0.00%
+ 696  Thorectandra_excavatus                  98.70%    failed      0.00%
+ 697  Mycale_macilenta                        96.14%    failed      0.00%
+ 698  Mycale_minima                           96.14%    failed      0.00%
+ 699  Mycale_citrina                          94.67%    failed      0.00%
+ 700  Mycale_alagoana                         94.67%    failed      0.00%
+ 701  Mycale_subclavata                       96.14%    failed      0.00%
+ 702  Mycale_titubans                         96.16%    failed      0.00%
+ 703  Mycale_angulosa                         94.72%    failed      0.00%
+ 704  Mycale_rotalis                          96.14%    failed      0.00%
+ 705  Mycale_sanguinea                        96.15%    failed      0.00%
+ 706  Leuconia_nivea                          97.60%    failed      0.00%
+ 707  Synute_pulchella                        97.12%    failed      0.00%
+ 708  Teichonopsis_labyrinthica               97.12%    failed      0.00%
+ 709  Grantiopsis_cylindrica                  97.12%    failed      0.00%
+ 710  Paraleucilla_magna                      96.52%    failed      0.00%
+ 711  Achramorpha_ingolfi                     96.37%    failed      0.00%
+ 712  Sycon_abyssale                          96.13%    failed      0.00%
+ 713  Callyspongia_vaginalis                  97.69%    failed      0.00%
+ 714  Reniochalina_stalagmitis                96.84%    failed      0.00%
+ 715  Trikentrion_flabelliforme               96.62%    failed      0.00%
+ 716  Cinachyrella_alloclada                  93.49%    failed      0.00%
+ 717  Levantinella_levantinensis              94.86%    failed      0.00%
+ 718  Craniella_neocaledonica                 96.56%    failed      0.00%
+ 719  Cinachyrella_anatriaenilla              96.19%    failed      0.00%
+ 720  Aciculites_ciliata                      95.87%    failed      0.00%
+ 721  Stupenda_singularis                     97.12%    failed      0.00%
+ 722  Scleritoderma_tortuga                   95.90%    failed      0.00%
+ 723  Abyssocladia_hemiradiata                98.43%    passed      6.43%
+ 724  Cladorhiza_abyssicola                   96.50%    failed      0.00%
+ 725  Esperiopsis_koltuni                     98.96%    failed      1.10%
+ 726  Abyssocladia_kellyae                    98.43%    failed      0.00%
+ 727  Abyssocladia_marianensis                98.43%    failed      0.00%
+ 728  Abyssocladia_stegosaurensis             98.44%    failed      0.00%
+ 729  Abyssocladia_villosa                    98.43%    failed      0.24%
+ 730  Lycopodina_subtile                      98.43%    passed      5.51%
+ 731  Mycale_flagellifera                     99.55%    failed      0.30%
+ 732  Mycale_laevis                           98.38%    failed      0.18%
+ 733  Mycale_magnirhaphidifera                98.56%    failed      0.00%
+ 734  Mycale_carmigropila                     98.52%    failed      0.00%
+ 735  Mycale_fistulifera                      99.54%    failed      0.06%
+ 736  Mycale_microsigmatosa                   96.64%    failed      0.00%
+ 737  Mycale_adhaerens                        99.56%    failed      0.20%
+ 738  Mycale_parishii                         98.32%    failed      0.00%
+ 739  Mycale_sulevoidea                       99.56%    failed      0.09%
+ 740  Mycale_lingua                           99.29%    failed      0.00%
+ 741  Mycale_acerata                          98.52%    failed      0.00%
+ 742  Mycale_arcuiris                         98.53%    failed      0.00%
+ 743  Mycale_arenaria                         98.53%    failed      0.00%
+ 744  Mycale_contarenii                       98.59%    failed      0.00%
+ 745  Mycale_escarlatei                       98.59%    failed      0.00%
+ 746  Mycale_phyllophila                      98.59%    failed      0.00%
+ 747  Mycale_syrinx                           98.59%    failed      0.00%
+ 748  Mycale_thielei                          98.52%    failed      0.00%
+ 749  Lophocalyx_profundum                    90.76%    failed      0.00%
+ 750  Malacosaccus_coatsi                     96.52%    failed      0.00%
+ 751  Acoelocalyx_brucei                      96.56%    failed      0.00%
+ 752  Iphiteon_panicea                        92.85%    failed      0.00%
+ 753  Lonchiphora_antarctica                  96.50%    failed      0.00%
+ 754  Sarostegia_oculata                      91.14%    failed      0.00%
+ 755  Sympagella_nux                          92.18%    failed      0.00%
+ 756  Lefroyella_decora                       91.47%    failed      0.00%
+ 757  Laocoetis_perion                        96.54%    failed      0.00%
+ 758  Hyalonema_depressum                     99.05%    failed      0.00%
+ 759  Hyalonema_ovuliferum                    98.97%    failed      0.00%
+ 760  Hyalonema_obtusum                       99.03%    failed      0.00%
+ 761  Holascus_taraxacum                      97.52%    failed      0.00%
+ 762  Hyalostylus_microfloricomus             97.64%    failed      0.00%
+ 763  Saccocalyx_microhexactin                97.53%    failed      0.00%
+ 764  Saccocalyx_pedunculatus                 96.31%    failed      0.00%
+ 765  Calthropella_pathologica                99.10%    failed      0.00%
+ 766  Stryphnus_mucronatus                    98.66%    failed      0.00%
+ 767  Corallistes_masoni                      98.67%    failed      0.00%
+ 768  Discodermia_polydiscus                  98.67%    failed      0.00%
+ 769  Stryphnus_raratriaenus                  98.66%    failed      0.00%
+ 770  Thrombus_abyssi                         99.10%    failed      0.00%
+ 771  Vulcanella_ornata                       99.10%    failed      0.00%
+ 772  Poecillastra_amygdaloides               99.09%    failed      0.00%
+ 773  Asteropus_radiocrusta                   98.66%    failed      0.00%
+ 774  Stelletta_raphidiophora                 98.49%    failed      0.00%
+ 775  Stelletta_carolinensis                  98.22%    failed      0.00%
+ 776  Theonella_conica                        98.67%    failed      0.00%
+ 777  Calthropella_durissima                  99.10%    failed      0.00%
+ 778  Penares_helleri                         98.66%    failed      0.00%
+ 779  Penares_sclerobesa                      98.65%    failed      0.00%
+ 780  Cinachyrella_anomala                    98.71%    failed      0.00%
+ 781  Cinachyrella_paterifera                 98.89%    failed      0.00%
+ 782  Tetilla_radiata                         98.66%    failed      0.00%
+ 783  Neophrissospongia_galapagoensis         95.53%    failed      0.00%
+ 784  Scleritoderma_nodosum                   98.75%    failed      0.00%
+ 785  Aciculites_sulcus                       98.75%    failed      0.00%
+ 786  Aciculites_pulchra                      98.72%    failed      0.00%
+ 787  Herengeria_auriculata                   98.67%    failed      0.00%
+ 788  Herengeria_vasiformis                   98.73%    failed      0.00%
+ 789  Neoschrammeniella_castrum               98.67%    failed      0.00%
+ 790  Neoschrammeniella_norfolki              98.67%    failed      0.00%
+ 791  Macandrewia_rigida                      99.10%    failed      0.00%
+ 792  Pleroma_menoui                          99.12%    failed      0.00%
+ 793  Aciculites_orientalis                   98.69%    failed      0.00%
+ 794  Scleritoderma_camusi                    98.69%    failed      0.00%
+ 795  Scleritoderma_flabelliforme             98.69%    failed      0.00%
+ 796  Microscleroderma_novaezelandiae         98.75%    failed      0.00%
+ 797  Neophrissospongia_microstylifera        96.00%    failed      0.00%
+ 798  Siphonidium_ramosum                     99.27%    failed      0.00%
+ 799  Theonella_invaginata                    98.71%    failed      0.00%
+ 800  Leiodermatium_tuba                      99.25%    failed      0.00%
+ 801  Liosina_paradoxa                        99.35%    failed      0.00%
+ 802  Borojevia_brasiliensis                  98.52%    failed      0.00%
+ 803  Clathrina_fjordica                      98.70%    failed      0.00%
+ 804  Borojevia_aspina                        98.57%    failed      0.00%
+ 805  Clathrina_lacunosa                      98.80%    failed      0.00%
+ 806  Clathrina_sinusarabica                  98.70%    failed      0.00%
+ 807  Clathrina_rowi                          98.70%    failed      0.00%
+ 808  Arturia_sueziana                        98.56%    failed      0.00%
+ 809  Clathrina_rotundata                     98.71%    failed      0.00%
+ 810  Borojevia_tenuispinata                  98.51%    failed      0.00%
+ 811  Clathrina_curacaoensis                  98.70%    failed      0.00%
+ 812  Clathrina_mutabilis                     98.70%    failed      0.00%
+ 813  Clathrina_insularis                     98.83%    failed      0.00%
+ 814  Clathrina_beckingae                     98.81%    failed      0.00%
+ 815  Clathrina_chrysea                       98.81%    failed      0.00%
+ 816  Clathrina_heronensis                    98.81%    failed      0.00%
+ 817  Clathrina_luteoculcitella               98.81%    failed      0.00%
+ 818  Clathrina_purpurea                      98.81%    failed      0.00%
+ 819  Arturia_tubuloreticulosa                99.06%    failed      0.00%
+ 820  Borojevia_pirella                       99.05%    failed      0.00%
+ 821  Borojevia_tubulata                      99.05%    failed      0.00%
+ 822  Clathrina_rodriguesensis                98.81%    failed      0.00%
+ 823  Clathrina_maremeccae                    98.94%    failed      0.00%
+ 824  Arturia_adusta                          99.05%    failed      0.00%
+ 825  Borojevia_crystallina                   98.54%    failed      0.00%
+ 826  Clathrina_delicata                      98.90%    failed      0.00%
+ 827  Janusya_indica                          98.97%    failed      0.00%
+ 828  Acanthella_cavernosa                    96.79%    failed      0.00%
+ 829  Axinella_verrucosa                      95.80%    failed      0.00%
+ 830  Sollasella_cervicornis                  99.04%    failed      0.00%
+ 831  Sollasella_moretonensis                 99.04%    failed      0.00%
+ 832  Axinella_damicornis                     99.64%    failed      0.12%
+ 833  Axinella_dissimilis                     99.64%    failed      0.11%
+ 834  Axinella_parva                          99.64%    failed      0.33%
+ 835  Axinella_pyramidata                     95.76%    failed      0.00%
+ 836  Axinella_vaceleti                       95.78%    failed      0.00%
+ 837  Raspailia_agnata                        98.91%    failed      0.00%
+ 838  Axinella_flustra                        95.78%    failed      0.00%
+ 839  Pachydictyum_incrustans                 99.70%    failed      0.00%
+ 840  Aspiculophora_madinina                  99.15%    failed      0.00%
+ 841  Plakina_arletensis                      99.15%    failed      0.00%
+ 842  Oscarella_zoranja                       99.45%    failed      0.00%
+ 843  Oscarella_filipoi                       99.43%    failed      0.00%
+ 844  Plakinastrella_nicoleae                 99.15%    failed      0.00%
+ 845  Plakortis_ruetzleri                     99.15%    failed      0.00%
+ 846  Plakinastrella_pseudolopha              99.15%    failed      0.00%
+ 847  Oscarella_balibaloi                     99.45%    failed      0.00%
+ 848  Tetralophophora_mesoamericana           99.18%    failed      0.00%
+ 849  Plakina_doudou                          99.18%    failed      0.00%
+ 850  Plakortis_simplex                       99.18%    failed      0.00%
+ 851  Plakina_jani                            99.18%    failed      0.00%
+ 852  Phorbas_fictitius                       99.65%    failed      0.00%
+ 853  Darwinella_muelleri                     98.15%    failed      0.01%
+ 854  Hippospongia_lachne                     98.17%    failed      0.00%
+ 855  Spirastrella_coccinea                   98.87%    failed      1.97%
+ 856  Tethya_actinia                          98.21%    failed      3.86%
+ 857  Dercitus_luteus                         94.37%    failed      0.00%
+ 858  Borojevia_cerebrum                      98.44%    failed      0.12%
+ 859  Leucilla_nuttingi                       98.60%    passed     31.98%
+ 860  Sycon_ciliatum                          97.16%    failed      0.00%
+ 861  Leucosolenia_complicata                 97.38%    failed      0.00%
+ 862  Biemna_fistulosa                        99.71%    failed      0.00%
+ 863  Biemna_ehrenbergi                       99.71%    failed      0.00%
+ 864  Aplysinella_rhax                        99.06%    failed      0.08%
+ 865  Farrea_occa                             95.19%    failed      0.00%
+ 866  Sympagella_delauzei                     94.95%    failed      0.00%
+ 867  Dactylocalyx_pumiceus                   94.96%    failed      0.00%
+ 868  Farrea_bowerbanki                       94.94%    failed      0.00%
+ 869  Tretodictyum_reiswigi                   94.91%    failed      0.00%
+ 870  Axinella_corrugata                      96.12%    failed      0.00%
+ 871  Dragmacidon_mexicanum                   97.09%    failed      0.00%
+ 872  Axinella_polypoides                     96.12%    failed      0.00%
+ 873  Axinella_polycapella                    96.51%    failed      0.00%
+ 874  Ptilocaulis_spiculifer                  97.17%    failed      0.00%
+ 875  Cymbastela_cantharella                  97.24%    failed      0.00%
+ 876  Dragmaxia_undata                        97.11%    failed      0.00%
+ 877  Dragmacidon_reticulatum                 97.49%    failed      0.00%
+ 878  Acanthella_cubensis                     97.11%    failed      0.00%
+ 879  Ascandra_contorta                       98.82%    failed      0.00%
+ 880  Ascandra_corallicola                    98.79%    failed      0.00%
+ 881  Ascaltis_reticulum                      99.23%    failed      0.00%
+ 882  Ernstia_tetractina                      99.24%    failed      0.00%
+ 883  Paragrantia_waguensis                   99.12%    failed      0.00%
+ 884  Pericharax_vallii                       99.22%    failed      0.00%
+ 885  Leucetta_purpurea                       99.22%    failed      0.00%
+ 886  Leucetta_foliata                        99.22%    failed      0.00%
+ 887  Pericharax_crypta                       99.22%    failed      0.00%
+ 888  Ernstia_arabica                         99.23%    failed      0.00%
+ 889  Soleneiscus_hamatus                     99.22%    failed      0.00%
+ 890  Leucetta_microraphis                    95.92%    failed      0.00%
+ 891  Leucetta_chagosensis                    98.37%    failed      0.00%
+ 892  Leuclathrina_translucida                98.86%    failed      0.00%
+ 893  Leucilla_antillana                      99.23%    failed      0.00%
+ 894  Grantessa_tumida                        99.06%    failed      0.00%
+ 895  Leucandrilla_quadriradiata              98.97%    failed      0.00%
+ 896  Sycon_conulosum                         99.09%    failed      0.00%
+ 897  Leucilla_micropilosa                    99.22%    failed      0.00%
+ 898  Sycon_magnapicale                       98.98%    failed      0.00%
+ 899  Ascaltis_angusta                        99.29%    failed      0.00%
+ 900  Ernstia_chrysops                        99.30%    failed      0.00%
+ 901  Ernstia_klautauae                       99.29%    failed      0.00%
+ 902  Ernstia_naturalis                       99.29%    failed      0.00%
+ 903  Heteropia_minor                         99.04%    failed      0.00%
+ 904  Anamixilla_torresi                      99.28%    failed      0.00%
+ 905  Anamixilla_singaporensis                99.28%    failed      0.00%
+ 906  Uteopsis_argentea                       99.28%    failed      0.00%
+ 907  Ascandra_kakaban                        99.29%    failed      0.00%
+ 908  Leucascus_flavus                        99.29%    failed      0.00%
+ 909  Ascoleucetta_sagittata                  99.29%    failed      0.00%
+ 910  Pericharax_orientalis                   99.29%    failed      0.00%
+ 911  Burtonulla_sibogae                      99.29%    failed      0.00%
+ 912  Levinella_thalassae                     99.29%    failed      0.00%
+ 913  Sycetta_vinitincta                      99.04%    failed      0.00%
+ 914  Sycon_scaldiense                        99.04%    failed      0.00%
+ 915  Paraleucilla_erpenbecki                 99.28%    failed      0.00%
+ 916  Leucandra_mozambiquensis                99.04%    failed      0.00%
+ 917  Leucandra_pilula                        99.04%    failed      0.00%
+ 918  Ute_insulagemmae                        99.04%    failed      0.00%
+ 919  Grantessa_woerheidei                    99.04%    failed      0.00%
+ 920  Sycettusa_hirsutissima                  99.04%    failed      0.00%
+ 921  Sycettusa_hastifera                     99.04%    failed      0.00%
+ 922  Sycettusa_simplex                       99.04%    failed      0.00%
+ 923  Sycettusa_stauridia                     99.04%    failed      0.00%
+ 924  Sycettusa_zanzibaris                    99.04%    failed      0.00%
+ 925  Kebira_uteoides                         99.28%    failed      0.00%
+ 926  Kebira_tetractinifera                   99.28%    failed      0.00%
+ 927  Leucaltis_nodusgordii                   98.83%    failed      0.00%
+ 928  Leucetta_sulcata                        99.29%    failed      0.00%
+ 929  Ascoleucetta_compressa                  99.24%    failed      0.00%
+ 930  Bidderia_bicolora                       99.30%    failed      0.00%
+ 931  Ernstia_adunca                          99.22%    failed      0.00%
+ 932  Leucilla_mancoraensis                   99.22%    failed      0.00%
+ 933  Paraleucilla_perlucida                  99.25%    failed      0.00%
+ 934  Paraleucilla_tarazonai                  99.24%    failed      0.00%
+ 935  Amphoriscus_pedunculatus                99.30%    failed      0.00%
+ 936  Sarsinella_karasikensis                 99.24%    failed      0.00%
+ 937  Breitfussia_schulzei                    99.23%    failed      0.00%
+ 938  Grantia_arctica                         98.98%    failed      0.00%
+ 939  Grantia_capillosa                       99.01%    failed      0.00%
+ 940  Grantia_compressa                       99.01%    failed      0.00%
+ 941  Leucandra_ananas                        98.98%    failed      0.00%
+ 942  Leucandra_aspera                        98.99%    failed      0.00%
+ 943  Leucandra_penicillata                   98.99%    failed      0.00%
+ 944  Leucosolenia_botryoides                 99.23%    failed      0.00%
+ 945  Megapogon_schiaparellii                 99.25%    failed      0.00%
+ 946  Paraleucilla_dalmatica                  99.24%    failed      0.00%
+ 947  Sycandra_utriculus                      99.00%    failed      0.00%
+ 948  Sycetta_antarctica                      98.99%    failed      0.00%
+ 949  Sycetta_asconoides                      99.00%    failed      0.00%
+ 950  Sycettusa_thompsoni                     98.99%    failed      0.00%
+ 951  Sycon_caminatum                         99.00%    failed      0.00%
+ 952  Sycon_karajakense                       98.98%    failed      0.00%
+ 953  Sycon_spinispiculum                     99.01%    failed      0.00%
+ 954  Sycon_villosum                          99.00%    failed      0.00%
+ 955  Ute_glabra                              99.00%    failed      0.00%
+ 956  Ute_gladiata                            99.00%    failed      0.00%
+ 957  Heteropia_glomerosa                     98.99%    failed      0.00%
+ 958  Leucascus_simplex                       98.82%    failed      0.00%
+ 959  Aphroceras_seychellensis                98.98%    failed      0.00%
+ 960  Ascandra_mascarenica                    99.24%    failed      0.00%
+ 961  Ascandra_oceanusvitae                   99.33%    failed      0.00%
+ 962  Lelapiella_tertia                       99.08%    failed      0.00%
+ 963  Leucandra_ornata                        98.97%    failed      0.00%
+ 964  Leucascus_tenuispinae                   99.26%    failed      0.00%
+ 965  Soleneiscus_intermedius                 99.26%    failed      0.00%
+ 966  Luffariella_geometrica                  95.21%    failed      0.00%
+ 967  Aplysinopsis_elegans                    95.21%    failed      0.00%
+ 968  Hyrtios_erectus                         94.16%    failed      0.00%
+ 969  Fasciospongia_chondrodes                95.21%    failed      0.00%
+ 970  Hyrtios_violaceus                       95.22%    failed      0.00%
+ 971  Petrosia_lignosa                        98.09%    failed      0.00%
+ 972  Xestospongia_bocatorensis               98.00%    failed      0.00%
+ 973  Neopetrosia_exigua                      98.09%    failed      0.00%
+ 974  Petrosia_strongylata                    97.98%    failed      0.00%
+ 975  Neopetrosia_rosariensis                 97.99%    failed      0.00%
+ 976  Neopetrosia_chaliniformis               98.15%    failed      0.19%
+ 977  Euryspongia_lobata                      97.17%    failed      0.00%
+ 978  Spongia_pertusa                         96.17%    failed      0.00%
+ 979  Spongia_zimocca                         96.17%    failed      0.00%
+ 980  Leiosella_ramosa                        96.17%    failed      0.00%
+ 981  Halisarca_restingaensis                 98.10%    failed      0.47%
+ 982  Lamellodysidea_herbacea                 97.13%    failed      0.00%
+ 983  Spongia_tubulifera                      96.17%    failed      0.00%
+ 984  Lamellodysidea_chlorea                  97.13%    failed      0.00%
+ 985  Spongia_matamata                        96.17%    failed      0.00%
+ 986  Dysidea_fragilis                        96.76%    failed      0.00%
+ 987  Coscinoderma_mathewsi                   95.79%    failed      0.00%
+ 988  Dysidea_janiae                          97.13%    failed      0.00%
+ 989  Hyattella_intestinalis                  95.80%    failed      0.00%
+ 990  Dysidea_etheria                         97.13%    failed      0.00%
+ 991  Suberea_creba                           99.05%    failed      1.21%
+ 992  Chondrosia_corticata                    99.05%    failed      2.06%
+ 993  Myrmekioderma_granulatum                98.07%    failed      0.02%
+ 994  Amphinomia_sulphurea                    97.11%    failed      0.00%
+ 995  Ceratopsion_axiferum                    97.11%    failed      0.00%
+ 996  Eurypon_hispidum                        96.15%    failed      0.00%
+ 997  Higginsia_anfractuosa                   98.08%    failed      0.05%
+ 998  Higginsia_mixta                         98.10%    failed      0.01%
+ 999  Janulum_spinispiculum                   97.12%    failed      0.00%
+1000  Cyamon_spinispinosum                    97.12%    failed      0.00%
+1001  Biemna_variantia                        99.04%    failed      0.47%
+1002  Phycopsis_fusiformis                    98.19%    failed      0.00%
+1003  Dictyonella_pelligera                   97.20%    failed      0.00%
+1004  Scopalina_hispida                       97.13%    failed      0.00%
+1005  Dictyonella_obtusa                      97.11%    failed      0.00%
+1006  Cervicornia_cuspidifera                 98.68%    failed      0.03%
+1007  Cliona_viridis                          99.04%    failed      2.49%
+1008  Desmacella_pumilio                      99.04%    failed      1.12%
+1009  Desmacella_lampra                       99.07%    failed      2.02%
+1010  Merlia_normani                          98.69%    failed      0.00%
+1011  Polymastia_pachymastia                  98.05%    failed      0.00%
+1012  Protosuberites_ectyoninus               99.09%    failed      1.24%
+1013  Protosuberites_incrustans               99.06%    failed      0.64%
+1014  Protosuberites_denhartogi               99.06%    failed      4.22%
+1015  Protosuberites_mereui                   99.06%    failed      4.22%
+1016  Prosuberites_longispinus                99.04%    failed      1.28%
+1017  Spongosorites_genitrix                  98.11%    failed      0.00%
+1018  Hymeniacidon_caerulea                   98.08%    failed      0.00%
+1019  Ciocalypta_penicillus                   98.08%    failed      0.01%
+1020  Halichondria_attenuata                  98.08%    failed      0.00%
+1021  Axinyssa_cavernosa                      98.07%    failed      0.00%
+1022  Axinyssa_topsenti                       98.07%    failed      0.01%
+1023  Hymeniacidon_kitchingi                  98.08%    failed      0.00%
+1024  Halichondria_elenae                     98.11%    failed      0.01%
+1025  Halichondria_sitiens                    98.14%    failed      0.02%
+1026  Paratimea_dentata                       98.50%    failed      0.21%
+1027  Paratimea_aurantiaca                    98.50%    failed      0.16%
+1028  Theonella_cupola                        97.25%    failed      0.00%
+1029  Erylus_formosus                         96.16%    failed      0.00%
+1030  Tethyopsis_mortenseni                   95.03%    failed      0.00%
+1031  Poecillastra_laminaris                  97.11%    failed      0.00%
+1032  Disyringa_dissimilis                    96.36%    failed      0.00%
+1033  Callipelta_cavernicola                  97.11%    failed      0.00%
+1034  Trachycladus_laevispirulifer            99.07%    failed      1.63%
+1035  Trachycladus_stylifer                   99.04%    failed      1.50%
+1036  Petromica_ciocalyptoides                99.04%    failed      0.78%
+1037  Aka_mucosa                              99.05%    failed      0.13%
+1038  Phorbas_tenacior                        97.16%    failed      0.01%
+1039  Celtodoryx_morbihanensis                98.14%    failed      0.00%
+1040  Isodictya_compressa                     98.08%    failed      0.02%
+1041  Acanthancora_schmidti                   97.12%    failed      0.00%
+1042  Tedania_strongylostyla                  98.08%    failed      0.07%
+1043  Plocamiancora_arndti                    98.08%    failed      0.04%
+1044  Lissodendoryx_arenaria                  98.08%    failed      0.07%
+1045  Echinoclathria_dichotoma                97.12%    failed      0.00%
+1046  Lissodendoryx_fibrosa                   98.08%    failed      0.09%
+1047  Myxilla_fimbriata                       98.08%    failed      0.05%
+1048  Iophon_nigricans                        98.09%    failed      0.04%
+1049  Clathria_bulbotoxa                      96.15%    failed      0.00%
+1050  Clathria_venosa                         96.15%    failed      0.00%
+1051  Clathria_spinosa                        96.16%    failed      0.00%
+1052  Phorbas_plumosus                        97.17%    failed      0.00%
+1053  Isodictya_frondosa                      98.08%    failed      0.02%
+1054  Hymedesmia_pansa                        97.12%    failed      0.00%
+1055  Hamigera_hamigera                       97.12%    failed      0.00%
+1056  Antho_involvens                         97.12%    failed      0.00%
+1057  Crella_rosea                            98.08%    failed      0.05%
+1058  Hymedesmia_paupertas                    97.11%    failed      0.00%
+1059  Phorbas_amaranthus                      97.12%    failed      0.01%
+1060  Lissodendoryx_jenjonesae                98.08%    failed      0.17%
+1061  Phorbas_punctatus                       97.12%    failed      0.00%
+1062  Isodictya_ectofibrosa                   98.17%    failed      0.46%
+1063  Clathria_strepsitoxa                    96.15%    failed      0.00%
+1064  Hemimycale_columella                    97.11%    failed      0.01%
+1065  Diacarnus_bismarckensis                 98.08%    failed      0.04%
+1066  Clathria_atrasanguinea                  96.15%    failed      0.00%
+1067  Crella_incrustans                       98.08%    failed      0.07%
+1068  Tsitsikamma_scurra                      98.08%    failed      0.02%
+1069  Inflatella_pellicula                    98.08%    failed      0.12%
+1070  Amphilectus_fucorum                     97.83%    failed      0.00%
+1071  Tsitsikamma_pedunculata                 98.08%    failed      0.03%
+1072  Crella_plana                            98.08%    failed      0.04%
+1073  Spanioplon_armaturum                    97.12%    failed      0.00%
+1074  Latrunculia_lunaviridis                 98.08%    failed      0.01%
+1075  Myxilla_ancorata                        98.07%    failed      0.09%
+1076  Acarnus_innominatus                     97.72%    failed      0.00%
+1077  Ectyonopsis_flabellata                  98.08%    failed      0.04%
+1078  Isodictya_palmata                       98.12%    failed      0.01%
+1079  Crambe_crambe                           97.75%    failed      0.00%
+1080  Hemimycale_ceadensis                    97.11%    failed      0.00%
+1081  Siphonodictyon_coralliphagum_USN        99.04%    failed      0.17%
+1082  Oceanapia_isodictyiformis               99.04%    failed      0.15%
+1083  uncultured_Porifera                     99.08%    failed      0.36%
+1084  Dasychalina_fragilis                    99.05%    failed      0.00%
+1085  Dasychalina_melior                      99.05%    failed      0.50%
+1086  Haliclona_curacaoensis                  97.27%    failed      0.00%
+1087  Pseudocorticium_jarrei                  97.32%    failed      0.00%
+1088  Acanthostylotella_cornuta               99.12%    failed      2.87%
+1089  Symplectella_rowi                       98.63%    failed      0.00%
+1090  Asconema_fristedti                      98.76%    failed      0.00%
+1091  Doconesthes_dustinchiversi              98.62%    failed      0.00%
+1092  Monanchora_quadrangulata                99.77%    failed      0.00%
+1093  Mycale_marshallhalli                    99.75%    failed      0.00%
+1094  Clathria_cleistochela                   99.80%    failed      0.00%
+1095  Isodictya_bentarti                      99.78%    failed      0.00%
+1096  Oscarella_malakhovi                     97.69%    failed      0.00%
+1097  Oscarella_microlobata                   98.00%    failed      0.00%
+1098  Oscarella_nicolae                       97.69%    failed      0.00%
+1099  Oscarella_bergenensis                   97.69%    failed      0.00%
+1100  Oscarella_rubra                         98.08%    failed      0.00%
+1101  Oscarella_tuberculata                   97.68%    failed      0.00%
+1102  Oscarella_kamchatkensis                 97.94%    failed      0.00%
+1103  Hertwigia_falcifera                     99.28%    failed      0.00%
+1104  Holascus_euonyx                         99.79%    failed      0.00%
+1105  Dictyaulus_kexueae                      98.65%    failed      0.00%
+1106  Cliona_varians                          99.02%    passed      5.79%
+1107  Siphonodictyon_coralliphagum            99.56%    failed      2.78%
+1108  Oscarella_carmela                       99.56%    passed     10.92%
+1109  Lendenfeldia_chondrodes                 98.87%    failed      0.00%
+1110  Lendenfeldia_dendyi                     99.42%    failed      0.00%
+1111  Phyllospongia_alcicornis                99.43%    failed      0.00%
+1112  Candidaspongia_flabellata               99.44%    failed      0.00%
+1113  Collospongia_auris                      99.25%    failed      0.00%
+1114  Coscinoderma_lanuga                     99.63%    failed      0.00%
+1115  Fenestraspongia_intertexta              99.25%    failed      0.00%
+1116  Hippospongia_ammata                     99.63%    failed      0.00%
+1117  Luffariella_caliculata                  99.25%    failed      0.00%
+1118  Luffariella_cylindrica                  99.25%    failed      0.00%
+1119  Rhopaloeides_odorabile                  99.63%    failed      0.00%
+1120  Spongia_hispida                         99.63%    failed      0.00%
+1121  Taonura_flabelliformis                  99.25%    failed      0.00%
+1122  Thorecta_freija                         99.25%    failed      0.00%
+1123  Thorecta_reticulatus                    99.25%    failed      0.00%
+1124  Spongia_irregularis                     99.63%    failed      0.00%
+1125  Spongia_ceylonensis                     99.63%    failed      0.00%
+1126  Cliona_orientalis                       98.99%    failed      0.00%
+1127  Cliona_mussae                           99.60%    failed      0.11%
+1128  Spheciospongia_vagabunda                99.60%    failed      0.05%
+1129  Spheciospongia_purpurea                 99.60%    failed      0.02%
+1130  Diplastrella_spiniglobata               99.58%    failed      0.02%
+1131  Lophophysema_eversa                     99.04%    failed      0.00%
+1132  Semperella_crosnieri                    99.06%    failed      0.00%
+1133  Hyalonema_clarioni                      99.58%    failed      0.00%
+1134  Hyalonema_campanula                     99.58%    failed      0.00%
+1135  Hyalonema_agassizi                      99.64%    failed      0.00%
+1136  Hyalonema_breviradix                    99.65%    failed      0.00%
+1137  Poliopogon_microuncinata                99.58%    failed      0.00%
+1138  Pheronemoides_curvipentactin            99.04%    failed      0.00%
+1139  Ascandra_falcata                        99.55%    failed      3.45%
+1140  Ascandra_spalatensis                    99.56%    failed      0.85%
+1141  Leucaltis_nuda                          99.58%    passed     11.04%
+1142  Pericharax_heteroraphis                 99.57%    passed      8.73%
+1143  Leucetta_floridana                      99.60%    failed      0.46%
+1144  Leucetta_potiguar                       99.58%    failed      0.56%
+1145  Leucetta_delicata                       99.56%    passed     19.79%
+1146  Arturia_hirsuta                         99.60%    passed     22.13%
+1147  Arturia_spirallata                      99.60%    passed     18.29%
+1148  Borojevia_trispinata                    99.56%    failed      0.82%
+1149  Verrucocoeloidea_liberatorii            99.10%    failed      0.00%
+1150  Cyrtaulon_sigsbeei                      99.14%    failed      0.00%
+1151  Homoieurete_macquariense                99.11%    failed      0.00%
+1152  Hexadella_indica                        99.40%    failed      0.06%
+1153  Hyrtios_spinifer                        99.70%    failed      3.75%
+1154  Plakortis_dariae                        99.73%    failed      0.00%
+1155  Halichondria_panicea                    99.57%    passed      5.34%
+1156  Sycon_raphanus                          99.59%    failed      0.00%
+1157  Heterochone_calyx                       99.58%    failed      0.00%
+1158  Oscarella_pearsei                       99.60%    failed      0.00%
+1159  Euryplegma_auriculare                   99.18%    failed      0.00%
+1160  Tethya_bergquistae                      99.71%    failed      0.00%
+1161  Iophon_parvachela                       99.67%    failed      0.00%
+1162  Diacarnus_megaspinorhabdosa             99.64%    failed      0.00%
+1163  Latrunculia_apicalis                    99.64%    failed      0.00%
+1164  Crambe_amarilla                         99.67%    failed      0.00%
+1165  Crambe_chilensis                        99.68%    failed      0.00%
+1166  Crambe_maldonadoi                       99.67%    failed      0.00%
+1167  Lubomirskia_incrustans                  99.47%    passed     12.94%
+1168  Rezinkovia_echinata                     99.57%    failed      0.17%
+1169  Ircinia_irregularis                     99.71%    failed      0.00%
+1170  Ircinia_ramodigitata                    99.71%    failed      0.00%
+1171  Ircinia_spiculosa                       99.71%    failed      0.00%
+1172  Ircinia_ramosa                          99.71%    failed      0.00%
+1173  Cliona_aprica                           99.86%    failed      0.10%
+1174  Cliona_laticavicola                     99.86%    failed      0.00%
+1175  Cliona_caribbaea                        99.86%    failed      0.01%
+1176  Pione_lampa                             99.86%    failed      0.01%
+1177  Cliona_thomasi                          99.86%    failed      0.04%
+1178  _R_Ircinia_felix                        99.63%    failed      0.13%
+1179  _R_Ircinia_oros                         99.61%    failed      0.11%
+1180  _R_Candidaspongia_flabellata            99.65%    failed      0.14%
+1181  _R_Carteriospongia_foliascens           99.64%    failed      0.00%
+1182  _R_cf_Fascaplysinopsis_reticulata_AG-   99.63%    passed     28.75%
+1183  _R_Thorectandra_excavatus               99.63%    passed     38.67%
+1184  _R_Thorecta_freija                      99.64%    failed      0.00%
+1185  _R_Thorecta_reticulatus                 99.64%    failed      0.02%
+1186  _R_Petrosaspongia_nigra                 99.63%    failed      0.26%
+1187  _R_Luffariella_caliculata               99.63%    failed      0.11%
+1188  _R_Luffariella_variabilis               99.63%    failed      0.18%
+1189  _R_Hyrtios_erectus                      99.65%    failed      0.96%
+1190  _R_Hyrtios_proteus                      99.63%    passed     17.77%
+1191  _R_Hyrtios_reticulatus                  99.64%    failed      2.03%
+1192  _R_Cacospongia_mollior                  99.68%    failed      3.55%
+1193  _R_Cacospongia_mycofijiensis            99.64%    failed      0.21%
+1194  _R_Coscinoderma_lanuga                  99.65%    failed      0.94%
+1195  _R_Coscinoderma_mathewsi                99.63%    failed      0.02%
+1196  _R_Hippospongia_ammata                  99.63%    failed      0.06%
+1197  _R_Hippospongia_communis                99.64%    failed      0.78%
+1198  _R_Rhopaloeides_odorabile               99.64%    passed      6.83%
+1199  Ceratopsion_palmata                     99.74%    failed      0.00%
+WARNING: 1199 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   97.88%  1182 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Identifying sites to remove: done in 0.231487 secs using 93.06% CPU
+Identifying sites to remove: done in 0.176422 secs using 99.12% CPU
+Identifying sites to remove: done in 0.122905 secs using 96.8% CPU
+Identifying sites to remove: done in 0.014786 secs using 325% CPU
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	752	53123	11011	37665	GTR+I+G	mitochondrial
+2	DNA	411	72939	4938	64129	GTR+I+G	18S
+3	DNA	462	43456	7803	32549	GTR+I+G	28S
+4	DNA	123	9449	3955	4553	GTR+I+G	othergenes
+Degree of missing data: 0.575
+Info: multi-threading strategy over alignment sites
+
+NOTE: Aplysina_cauliformis is identical to Aplysina_insularis but kept for subsequent analysis
+NOTE: Corvospongilla_siamensis is identical to Corvospongilla_ultima but kept for subsequent analysis
+NOTE: Pseudosuberites_hyalinus is identical to Plicatellopsis_antarctica but kept for subsequent analysis
+NOTE: Antarctotetilla_sagitta is identical to Antarctotetilla_leptoderma but kept for subsequent analysis
+NOTE: Erylus_gilchristi is identical to Erylus_amorphus but kept for subsequent analysis
+NOTE: Artemisina_plumosa is identical to Artemisina_jovis but kept for subsequent analysis
+NOTE: Corticium_vaceleti is identical to Corticium_diamantense but kept for subsequent analysis
+NOTE: Agelas_tubulata is identical to Agelas_gracilis but kept for subsequent analysis
+NOTE: Ircinia_ramosa is identical to Ircinia_ramodigitata but kept for subsequent analysis
+NOTE: Protosuberites_mereui is identical to Protosuberites_denhartogi but kept for subsequent analysis
+NOTE: Isodictya_frondosa is identical to Isodictya_compressa but kept for subsequent analysis
+NOTE: Anamixilla_singaporensis is identical to Anamixilla_torresi but kept for subsequent analysis
+NOTE: Luffariella_cylindrica is identical to Luffariella_caliculata but kept for subsequent analysis
+Identifying sites to remove: done in 0.206402 secs using 296.9% CPU
+Identifying sites to remove: done in 0.153527 secs using 315.2% CPU
+Identifying sites to remove: done in 0.11521 secs using 309.9% CPU
+Identifying sites to remove: done in 0.0116038 secs using 338.7% CPU
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Antarctotetilla_grandis (identical to Antarctotetilla_leptoderma) is ignored but added at the end
+NOTE: Agelas_arborescens (identical to Agelas_gracilis) is ignored but added at the end
+Alignment was printed to partition.txt.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to partition.txt.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 10.827 seconds
+
+NOTE: 2477 MB RAM (2 GB) is required!
+WARNING: Memory required per CPU-core (2.41903 GB) is higher than your computer RAM per CPU-core (2 GB), thus multiple runs may exceed RAM!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1103832.967
+Current log-likelihood at step 1: -882679.539
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -856888.091
+Current log-likelihood at step 3: -851937.780
+Current log-likelihood at step 4: -851620.289
+Current log-likelihood at step 5: -851511.962
+Current log-likelihood at step 6: -851413.337
+Current log-likelihood at step 7: -851317.569
+Current log-likelihood at step 8: -851224.221
+Current log-likelihood at step 9: -851132.362
+Current log-likelihood at step 10: -851042.914
+Current log-likelihood at step 11: -850956.615
+Current log-likelihood at step 12: -850874.190
+Current log-likelihood at step 13: -850797.849
+Current log-likelihood at step 14: -850727.978
+Current log-likelihood at step 15: -850664.525
+Current log-likelihood at step 16: -850607.489
+Current log-likelihood at step 17: -850555.897
+Current log-likelihood at step 18: -850509.249
+Current log-likelihood at step 19: -850467.182
+Current log-likelihood at step 20: -850429.373
+Current log-likelihood at step 21: -850396.434
+Current log-likelihood at step 22: -850368.172
+Current log-likelihood at step 23: -850344.544
+Current log-likelihood at step 24: -850325.072
+Current log-likelihood at step 25: -850308.626
+Current log-likelihood at step 26: -850294.436
+Current log-likelihood at step 27: -850281.966
+Current log-likelihood at step 28: -850270.861
+Current log-likelihood at step 29: -850260.905
+Current log-likelihood at step 30: -850251.895
+Current log-likelihood at step 31: -850243.989
+Current log-likelihood at step 32: -850237.014
+Current log-likelihood at step 33: -850230.957
+Current log-likelihood at step 34: -850225.711
+Current log-likelihood at step 35: -850221.203
+Current log-likelihood at step 36: -850217.357
+Current log-likelihood at step 37: -850214.086
+Current log-likelihood at step 38: -850211.326
+Current log-likelihood at step 39: -850208.994
+Current log-likelihood at step 40: -850207.049
+Current log-likelihood at step 41: -850205.428
+Current log-likelihood at step 42: -850204.075
+Current log-likelihood at step 43: -850202.924
+Current log-likelihood at step 44: -850201.972
+Current log-likelihood at step 45: -850201.184
+Current log-likelihood at step 46: -850200.520
+Current log-likelihood at step 47: -850199.968
+Current log-likelihood at step 48: -850199.508
+Current log-likelihood at step 49: -850199.125
+Current log-likelihood at step 50: -850198.804
+Current log-likelihood at step 51: -850198.533
+Current log-likelihood at step 52: -850198.303
+Current log-likelihood at step 53: -850198.109
+Current log-likelihood at step 54: -850197.950
+Current log-likelihood at step 55: -850197.813
+Current log-likelihood at step 56: -850197.700
+Current log-likelihood at step 57: -850197.606
+Partition-specific rates:  1.507 0.368 1.154 2.315
+Parameters optimization took 56 rounds (483.556 sec)
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0409961 secs using 540.7% CPU
+Computing ML distances took 0.055047 sec (of wall-clock time) 0.236759 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.0109909 secs using 270% CPU
+Constructing RapidNJ tree: done in 0.277762 secs using 381.8% CPU
+Computing RapidNJ tree took 0.289214 sec (of wall-clock time) 1.092130 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -1223167.547
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1273.926 second
+Computing log-likelihood of 98 initial trees ... 506.844 seconds
+Current best score: -850197.606
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 631.511 secs using 380.6% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -838878.458
+Current log-likelihood at step 1: -838827.090
+Current log-likelihood at step 2: -838820.108
+Current log-likelihood at step 3: -838817.195
+Current log-likelihood at step 4: -838815.660
+Current log-likelihood at step 5: -838814.716
+Current log-likelihood at step 6: -838814.046
+Current log-likelihood at step 7: -838813.381
+Current log-likelihood at step 8: -838813.018
+Current log-likelihood at step 9: -838812.765
+Current log-likelihood at step 10: -838812.571
+Current log-likelihood at step 11: -838812.427
+Current log-likelihood at step 12: -838812.313
+Current log-likelihood at step 13: -838812.223
+Parameters optimization took 12 rounds (143.174 sec)
+
+BETTER TREE FOUND at iteration 1: -838812.223
+Optimizing NNI: done in 431.53 secs using 418% CPU
+Optimizing NNI: done in 761.269 secs using 412.6% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -837931.845
+Current log-likelihood at step 1: -837930.368
+Current log-likelihood at step 2: -837930.026
+Current log-likelihood at step 3: -837929.962
+Parameters optimization took 2 rounds (26.343 sec)
+
+BETTER TREE FOUND at iteration 3: -837929.962
+Optimizing NNI: done in 327.537 secs using 525.9% CPU
+Optimizing NNI: done in 303.643 secs using 551% CPU
+Optimizing NNI: done in 187.117 secs using 549.6% CPU
+Optimizing NNI: done in 493.383 secs using 408.6% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -837782.908
+Current log-likelihood at step 1: -837780.438
+Current log-likelihood at step 2: -837780.228
+Current log-likelihood at step 3: -837780.125
+Current log-likelihood at step 4: -837779.998
+Current log-likelihood at step 5: -837779.977
+Parameters optimization took 4 rounds (39.811 sec)
+
+BETTER TREE FOUND at iteration 7: -837779.977
+Optimizing NNI: done in 254.574 secs using 508% CPU
+Optimizing NNI: done in 564.404 secs using 457.8% CPU
+Optimizing NNI: done in 214.237 secs using 512.1% CPU
+Iteration 10 / LogL: -840173.844 / Time: 1h:53m:58s
+Optimizing NNI: done in 442.384 secs using 438.7% CPU
+Optimizing NNI: done in 617.605 secs using 269% CPU
+Optimizing NNI: done in 582.358 secs using 348.4% CPU
+Optimizing NNI: done in 349.614 secs using 471.3% CPU
+Optimizing NNI: done in 130.85 secs using 577.8% CPU
+Optimizing NNI: done in 193.722 secs using 584.7% CPU
+Optimizing NNI: done in 433.365 secs using 561.7% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -837472.882
+Current log-likelihood at step 1: -837469.157
+Current log-likelihood at step 2: -837468.837
+Current log-likelihood at step 3: -837468.698
+Current log-likelihood at step 4: -837468.595
+Current log-likelihood at step 5: -837468.510
+Parameters optimization took 4 rounds (32.841 sec)
+
+BETTER TREE FOUND at iteration 17: -837468.510
+Optimizing NNI: done in 195.528 secs using 578.1% CPU
+Optimizing NNI: done in 220.579 secs using 544.1% CPU
+Optimizing NNI: done in 396.598 secs using 572.9% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -837084.461
+Current log-likelihood at step 1: -837082.894
+Current log-likelihood at step 2: -837082.613
+Current log-likelihood at step 3: -837082.499
+Current log-likelihood at step 4: -837082.405
+Parameters optimization took 3 rounds (26.028 sec)
+
+BETTER TREE FOUND at iteration 20: -837082.405
+Iteration 20 / LogL: -837082.405 / Time: 2h:54m:22s
+Finish initializing candidate tree set (20)
+Current best tree score: -837082.405 / CPU time: 9785.384
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 255.264 secs using 550.4% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836960.083
+Current log-likelihood at step 1: -836957.845
+Current log-likelihood at step 2: -836957.627
+Current log-likelihood at step 3: -836957.581
+Parameters optimization took 2 rounds (20.931 sec)
+
+BETTER TREE FOUND at iteration 21: -836957.581
+Optimizing NNI: done in 2035.34 secs using 66.12% CPU
+Optimizing NNI: done in 1447.86 secs using 46.09% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836873.016
+Current log-likelihood at step 1: -836869.409
+Current log-likelihood at step 2: -836868.746
+Current log-likelihood at step 3: -836868.641
+Current log-likelihood at step 4: -836868.571
+Parameters optimization took 3 rounds (297.784 sec)
+
+BETTER TREE FOUND at iteration 23: -836868.571
+Optimizing NNI: done in 864.528 secs using 165.6% CPU
+Optimizing NNI: done in 306.749 secs using 584.2% CPU
+Optimizing NNI: done in 155.526 secs using 588.8% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836840.653
+Current log-likelihood at step 1: -836837.629
+Current log-likelihood at step 2: -836837.407
+Current log-likelihood at step 3: -836837.347
+Parameters optimization took 2 rounds (33.906 sec)
+
+BETTER TREE FOUND at iteration 26: -836837.347
+Optimizing NNI: done in 133.208 secs using 585.7% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836689.322
+Current log-likelihood at step 1: -836687.490
+Current log-likelihood at step 2: -836687.324
+Current log-likelihood at step 3: -836687.247
+Parameters optimization took 2 rounds (33.087 sec)
+
+BETTER TREE FOUND at iteration 27: -836687.247
+Optimizing NNI: done in 214.475 secs using 574.4% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836468.993
+Current log-likelihood at step 1: -836468.786
+Current log-likelihood at step 2: -836468.721
+Parameters optimization took 1 rounds (21.226 sec)
+
+BETTER TREE FOUND at iteration 28: -836468.721
+Optimizing NNI: done in 368.005 secs using 591.3% CPU
+Optimizing NNI: done in 272.206 secs using 589.2% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836398.528
+Current log-likelihood at step 1: -836398.290
+Current log-likelihood at step 2: -836398.211
+Parameters optimization took 1 rounds (23.821 sec)
+
+BETTER TREE FOUND at iteration 30: -836398.211
+Iteration 30 / LogL: -836398.211 / Time: 4h:42m:30s (16h:13m:32s left)
+Optimizing NNI: done in 204.711 secs using 587.5% CPU
+Optimizing NNI: done in 95.5593 secs using 591.1% CPU
+Optimizing NNI: done in 144.888 secs using 588.8% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836377.737
+Current log-likelihood at step 1: -836377.384
+Current log-likelihood at step 2: -836377.173
+Current log-likelihood at step 3: -836377.082
+Parameters optimization took 2 rounds (37.215 sec)
+
+BETTER TREE FOUND at iteration 33: -836377.082
+Optimizing NNI: done in 244.447 secs using 593.2% CPU
+Optimizing NNI: done in 191.965 secs using 589.9% CPU
+Optimizing NNI: done in 120.079 secs using 583.4% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836375.803
+Current log-likelihood at step 1: -836375.369
+Current log-likelihood at step 2: -836375.238
+Current log-likelihood at step 3: -836375.121
+Current log-likelihood at step 4: -836375.031
+Parameters optimization took 3 rounds (50.609 sec)
+
+BETTER TREE FOUND at iteration 36: -836375.031
+Optimizing NNI: done in 401.57 secs using 591% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836339.795
+Current log-likelihood at step 1: -836338.648
+Current log-likelihood at step 2: -836338.510
+Current log-likelihood at step 3: -836338.378
+Current log-likelihood at step 4: -836338.320
+Parameters optimization took 3 rounds (53.255 sec)
+
+BETTER TREE FOUND at iteration 37: -836338.320
+Optimizing NNI: done in 252.076 secs using 588.8% CPU
+Optimizing NNI: done in 251.187 secs using 591.7% CPU
+Optimizing NNI: done in 162.703 secs using 590.3% CPU
+Iteration 40 / LogL: -836405.805 / Time: 5h:19m:26s (13h:14m:3s left)
+Optimizing NNI: done in 288.096 secs using 587.6% CPU
+Optimizing NNI: done in 241.182 secs using 586.4% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836286.973
+Current log-likelihood at step 1: -836286.388
+Current log-likelihood at step 2: -836286.315
+Parameters optimization took 1 rounds (24.796 sec)
+
+BETTER TREE FOUND at iteration 42: -836286.315
+Optimizing NNI: done in 316.263 secs using 584.8% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836259.239
+Current log-likelihood at step 1: -836258.982
+Current log-likelihood at step 2: -836258.918
+Parameters optimization took 1 rounds (25.347 sec)
+
+BETTER TREE FOUND at iteration 43: -836258.918
+Optimizing NNI: done in 94.7726 secs using 592.6% CPU
+Optimizing NNI: done in 260.015 secs using 592.9% CPU
+Optimizing NNI: done in 245.33 secs using 588.4% CPU
+Optimizing NNI: done in 223.466 secs using 590.3% CPU
+Optimizing NNI: done in 252.503 secs using 592.5% CPU
+Optimizing NNI: done in 178.515 secs using 592.8% CPU
+Optimizing NNI: done in 281.546 secs using 585.4% CPU
+Iteration 50 / LogL: -836300.072 / Time: 6h:0m:4s (11h:23m:2s left)
+Optimizing NNI: done in 175.333 secs using 592.6% CPU
+Optimizing NNI: done in 255.658 secs using 592.6% CPU
+Optimizing NNI: done in 138.837 secs using 590% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -836119.950
+Current log-likelihood at step 1: -836119.377
+Current log-likelihood at step 2: -836118.982
+Current log-likelihood at step 3: -836118.585
+Current log-likelihood at step 4: -836118.511
+Parameters optimization took 3 rounds (61.790 sec)
+
+BETTER TREE FOUND at iteration 53: -836118.511
+Optimizing NNI: done in 228.681 secs using 589.6% CPU
+Optimizing NNI: done in 190.781 secs using 591.8% CPU
+Optimizing NNI: done in 306.316 secs using 590.7% CPU
+Optimizing NNI: done in 91.9036 secs using 589.8% CPU
+Optimizing NNI: done in 186.262 secs using 591.6% CPU
+Optimizing NNI: done in 215.453 secs using 579.6% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835851.291
+Current log-likelihood at step 1: -835850.807
+Current log-likelihood at step 2: -835850.748
+Parameters optimization took 1 rounds (24.703 sec)
+
+BETTER TREE FOUND at iteration 59: -835850.748
+Optimizing NNI: done in 230.481 secs using 587.9% CPU
+Iteration 60 / LogL: -836200.790 / Time: 6h:35m:16s (11h:2m:55s left)
+Optimizing NNI: done in 190.274 secs using 591.7% CPU
+Optimizing NNI: done in 235.529 secs using 591.1% CPU
+Optimizing NNI: done in 98.3989 secs using 591.1% CPU
+Optimizing NNI: done in 239.645 secs using 589.1% CPU
+Optimizing NNI: done in 228.503 secs using 592.4% CPU
+Optimizing NNI: done in 201.385 secs using 592.6% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835825.973
+Current log-likelihood at step 1: -835825.868
+Current log-likelihood at step 2: -835825.854
+Parameters optimization took 1 rounds (24.796 sec)
+
+BETTER TREE FOUND at iteration 66: -835825.854
+Optimizing NNI: done in 105.91 secs using 589.9% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835824.089
+Current log-likelihood at step 1: -835822.898
+Current log-likelihood at step 2: -835822.244
+Current log-likelihood at step 3: -835821.878
+Current log-likelihood at step 4: -835821.786
+Parameters optimization took 3 rounds (59.592 sec)
+
+BETTER TREE FOUND at iteration 67: -835821.786
+Optimizing NNI: done in 241.772 secs using 583.5% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835811.601
+Current log-likelihood at step 1: -835810.744
+Current log-likelihood at step 2: -835810.592
+Current log-likelihood at step 3: -835810.493
+Parameters optimization took 2 rounds (37.795 sec)
+
+BETTER TREE FOUND at iteration 68: -835810.493
+Optimizing NNI: done in 176.456 secs using 591.7% CPU
+Optimizing NNI: done in 159.371 secs using 590.4% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835809.971
+Current log-likelihood at step 1: -835809.391
+Current log-likelihood at step 2: -835809.354
+Parameters optimization took 1 rounds (24.273 sec)
+
+BETTER TREE FOUND at iteration 70: -835809.354
+Iteration 70 / LogL: -835809.354 / Time: 7h:9m:5s (10h:21m:36s left)
+Optimizing NNI: done in 168.716 secs using 588.3% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835799.930
+Current log-likelihood at step 1: -835799.690
+Current log-likelihood at step 2: -835799.656
+Parameters optimization took 1 rounds (24.984 sec)
+
+BETTER TREE FOUND at iteration 71: -835799.656
+Optimizing NNI: done in 356.675 secs using 590.8% CPU
+Optimizing NNI: done in 198.927 secs using 589.9% CPU
+Optimizing NNI: done in 162.082 secs using 591.6% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835784.292
+Current log-likelihood at step 1: -835783.220
+Current log-likelihood at step 2: -835782.997
+Current log-likelihood at step 3: -835782.867
+Current log-likelihood at step 4: -835782.756
+Current log-likelihood at step 5: -835782.658
+Parameters optimization took 4 rounds (63.197 sec)
+
+BETTER TREE FOUND at iteration 74: -835782.658
+Optimizing NNI: done in 135.22 secs using 590.2% CPU
+Optimizing NNI: done in 273.293 secs using 572.9% CPU
+Optimizing NNI: done in 185.81 secs using 592.4% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835749.712
+Current log-likelihood at step 1: -835749.495
+Current log-likelihood at step 2: -835749.476
+Parameters optimization took 1 rounds (24.678 sec)
+
+BETTER TREE FOUND at iteration 77: -835749.476
+Optimizing NNI: done in 205.609 secs using 592% CPU
+Optimizing NNI: done in 130.222 secs using 593.3% CPU
+Optimizing NNI: done in 179.203 secs using 588.9% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835708.265
+Current log-likelihood at step 1: -835708.154
+Current log-likelihood at step 2: -835708.136
+Parameters optimization took 1 rounds (24.002 sec)
+
+BETTER TREE FOUND at iteration 80: -835708.136
+Iteration 80 / LogL: -835708.136 / Time: 7h:44m:43s (9h:48m:1s left)
+Optimizing NNI: done in 173.104 secs using 592.4% CPU
+Optimizing NNI: done in 185.618 secs using 590.9% CPU
+Optimizing NNI: done in 222.977 secs using 590.8% CPU
+Optimizing NNI: done in 140.531 secs using 590.9% CPU
+Optimizing NNI: done in 919.957 secs using 126.6% CPU
+Optimizing NNI: done in 79.4083 secs using 572.1% CPU
+Optimizing NNI: done in 143.192 secs using 586.3% CPU
+Optimizing NNI: done in 182.233 secs using 589.6% CPU
+Optimizing NNI: done in 184.572 secs using 592.4% CPU
+Optimizing NNI: done in 189.801 secs using 591.5% CPU
+Iteration 90 / LogL: -835939.311 / Time: 8h:25m:10s (8h:30m:39s left)
+Optimizing NNI: done in 94.9986 secs using 592.4% CPU
+Optimizing NNI: done in 183.092 secs using 586.2% CPU
+Optimizing NNI: done in 132.121 secs using 590.7% CPU
+Optimizing NNI: done in 191.155 secs using 586.2% CPU
+Optimizing NNI: done in 238.07 secs using 588.6% CPU
+Optimizing NNI: done in 184.756 secs using 580.3% CPU
+Optimizing NNI: done in 206.304 secs using 587.5% CPU
+Optimizing NNI: done in 184.197 secs using 587.3% CPU
+Optimizing NNI: done in 341.178 secs using 592.5% CPU
+Optimizing NNI: done in 232.55 secs using 590.5% CPU
+Iteration 100 / LogL: -835772.671 / Time: 8h:58m:24s (7h:14m:55s left)
+Optimizing NNI: done in 95.6423 secs using 591.5% CPU
+Optimizing NNI: done in 200.092 secs using 591.3% CPU
+Optimizing NNI: done in 217.017 secs using 592.6% CPU
+Optimizing NNI: done in 245.899 secs using 583.1% CPU
+Optimizing NNI: done in 207.529 secs using 584.4% CPU
+Optimizing NNI: done in 192.616 secs using 591.4% CPU
+Optimizing NNI: done in 357.556 secs using 590.2% CPU
+Optimizing NNI: done in 204.792 secs using 584.9% CPU
+Optimizing NNI: done in 182.855 secs using 588.5% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835691.753
+Current log-likelihood at step 1: -835691.251
+Current log-likelihood at step 2: -835691.212
+Parameters optimization took 1 rounds (24.739 sec)
+
+BETTER TREE FOUND at iteration 109: -835691.212
+Optimizing NNI: done in 146.841 secs using 588.9% CPU
+Iteration 110 / LogL: -835803.790 / Time: 9h:33m:5s (8h:40m:20s left)
+Optimizing NNI: done in 195.882 secs using 589.9% CPU
+Optimizing NNI: done in 188.402 secs using 590.8% CPU
+Optimizing NNI: done in 100.348 secs using 571.6% CPU
+Optimizing NNI: done in 199.683 secs using 586.5% CPU
+Optimizing NNI: done in 232.895 secs using 588.9% CPU
+Optimizing NNI: done in 232.191 secs using 593.2% CPU
+Optimizing NNI: done in 257.362 secs using 591.8% CPU
+Optimizing NNI: done in 242.996 secs using 590.3% CPU
+Optimizing NNI: done in 182.922 secs using 591.4% CPU
+Optimizing NNI: done in 254.352 secs using 590.7% CPU
+Iteration 120 / LogL: -835719.859 / Time: 10h:7m:57s (7h:34m:33s left)
+Optimizing NNI: done in 92.5971 secs using 593.4% CPU
+Optimizing NNI: done in 197.085 secs using 575.9% CPU
+Optimizing NNI: done in 90.1667 secs using 587.1% CPU
+Optimizing NNI: done in 317.758 secs using 580.9% CPU
+Optimizing NNI: done in 172.451 secs using 587.4% CPU
+Optimizing NNI: done in 233.671 secs using 589.9% CPU
+Optimizing NNI: done in 206.103 secs using 589.5% CPU
+Optimizing NNI: done in 236.495 secs using 589.4% CPU
+Optimizing NNI: done in 212.026 secs using 591.6% CPU
+Optimizing NNI: done in 170.378 secs using 589.7% CPU
+Iteration 130 / LogL: -836004.166 / Time: 10h:40m:12s (6h:31m:56s left)
+Optimizing NNI: done in 171.851 secs using 583.1% CPU
+Optimizing NNI: done in 213.406 secs using 591.6% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835689.845
+Current log-likelihood at step 1: -835689.661
+Current log-likelihood at step 2: -835689.575
+Parameters optimization took 1 rounds (25.381 sec)
+
+BETTER TREE FOUND at iteration 132: -835689.575
+Optimizing NNI: done in 217.435 secs using 589.1% CPU
+Optimizing NNI: done in 203.043 secs using 592.1% CPU
+Optimizing NNI: done in 183.353 secs using 592.8% CPU
+Optimizing NNI: done in 176.766 secs using 591.4% CPU
+Optimizing NNI: done in 195.71 secs using 588.3% CPU
+Optimizing NNI: done in 395.603 secs using 590.4% CPU
+Optimizing NNI: done in 196.997 secs using 581.7% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -835618.771
+Current log-likelihood at step 1: -835618.527
+Current log-likelihood at step 2: -835618.499
+Parameters optimization took 1 rounds (23.518 sec)
+
+BETTER TREE FOUND at iteration 139: -835618.499
+Optimizing NNI: done in 169.866 secs using 593% CPU
+Iteration 140 / LogL: -835679.813 / Time: 11h:16m:30s (8h:1m:42s left)
+Optimizing NNI: done in 208.2 secs using 589% CPU
+Optimizing NNI: done in 182.549 secs using 591.8% CPU
+Optimizing NNI: done in 234.583 secs using 591.4% CPU
+Optimizing NNI: done in 190.317 secs using 589% CPU
+Optimizing NNI: done in 177.982 secs using 589.8% CPU
+Optimizing NNI: done in 225.208 secs using 587.2% CPU
+Optimizing NNI: done in 259.108 secs using 581.2% CPU
+Optimizing NNI: done in 155.667 secs using 590.3% CPU
+Optimizing NNI: done in 182.211 secs using 592.7% CPU
+Optimizing NNI: done in 127.426 secs using 583.8% CPU
+Iteration 150 / LogL: -835680.703 / Time: 11h:48m:59s (7h:3m:22s left)
+Optimizing NNI: done in 95.1665 secs using 592.5% CPU
+Optimizing NNI: done in 172.06 secs using 592% CPU
+Optimizing NNI: done in 192.106 secs using 592% CPU
+Optimizing NNI: done in 161.956 secs using 590.8% CPU
+Optimizing NNI: done in 93.0286 secs using 593.7% CPU
+Optimizing NNI: done in 200.203 secs using 591.5% CPU
+Optimizing NNI: done in 231.18 secs using 589.8% CPU
+Optimizing NNI: done in 215.224 secs using 578.6% CPU
+Optimizing NNI: done in 160.593 secs using 590.4% CPU
+Optimizing NNI: done in 125.487 secs using 590.5% CPU
+Iteration 160 / LogL: -835706.310 / Time: 12h:16m:31s (6h:5m:51s left)
+Optimizing NNI: done in 220.872 secs using 588.1% CPU
+Optimizing NNI: done in 230.723 secs using 591.6% CPU
+Optimizing NNI: done in 212.752 secs using 590.9% CPU
+Optimizing NNI: done in 205.392 secs using 590% CPU
+Optimizing NNI: done in 138.025 secs using 585.5% CPU
+Optimizing NNI: done in 146.807 secs using 593.5% CPU
+Optimizing NNI: done in 179.412 secs using 590.4% CPU
+Optimizing NNI: done in 179.642 secs using 566.6% CPU
+Optimizing NNI: done in 183.138 secs using 584.5% CPU
+Optimizing NNI: done in 185.235 secs using 585.1% CPU
+Iteration 170 / LogL: -836037.563 / Time: 12h:47m:59s (5h:13m:28s left)
+Optimizing NNI: done in 216.759 secs using 588.5% CPU
+Optimizing NNI: done in 163.494 secs using 590.9% CPU
+Optimizing NNI: done in 210.489 secs using 590.7% CPU
+Optimizing NNI: done in 192.76 secs using 591.4% CPU
+Optimizing NNI: done in 209.88 secs using 592.1% CPU
+Optimizing NNI: done in 129.104 secs using 590.9% CPU
+Optimizing NNI: done in 128.373 secs using 586.4% CPU
+Optimizing NNI: done in 192.372 secs using 582.7% CPU
+Optimizing NNI: done in 188.825 secs using 586.7% CPU
+Optimizing NNI: done in 180.693 secs using 590.5% CPU
+Iteration 180 / LogL: -835657.094 / Time: 13h:18m:17s (4h:23m:3s left)
+Optimizing NNI: done in 195.32 secs using 591.6% CPU
+Optimizing NNI: done in 239.015 secs using 589.7% CPU
+Optimizing NNI: done in 177.355 secs using 590.8% CPU
+Optimizing NNI: done in 184.25 secs using 591.8% CPU
+Optimizing NNI: done in 200.883 secs using 587.8% CPU
+Optimizing NNI: done in 117.167 secs using 590.9% CPU
+Optimizing NNI: done in 190.095 secs using 590% CPU
+Optimizing NNI: done in 185.6 secs using 572.4% CPU
+Optimizing NNI: done in 139.736 secs using 592.3% CPU
+Optimizing NNI: done in 185.402 secs using 592% CPU
+Iteration 190 / LogL: -835718.309 / Time: 13h:48m:37s (3h:34m:46s left)
+Optimizing NNI: done in 161.74 secs using 593.2% CPU
+Optimizing NNI: done in 183.67 secs using 590.2% CPU
+Optimizing NNI: done in 188.05 secs using 589.8% CPU
+Optimizing NNI: done in 197.291 secs using 591.2% CPU
+Optimizing NNI: done in 200.702 secs using 586.4% CPU
+Optimizing NNI: done in 286.883 secs using 591.3% CPU
+Optimizing NNI: done in 238.887 secs using 579% CPU
+Optimizing NNI: done in 257.645 secs using 586% CPU
+Optimizing NNI: done in 193.765 secs using 591.9% CPU
+Optimizing NNI: done in 221.014 secs using 589.3% CPU
+Iteration 200 / LogL: -835858.508 / Time: 14h:24m:12s (2h:49m:19s left)
+Optimizing NNI: done in 208.147 secs using 588.7% CPU
+Optimizing NNI: done in 94.2558 secs using 585.8% CPU
+Optimizing NNI: done in 208.51 secs using 592.5% CPU
+Optimizing NNI: done in 206.977 secs using 583.6% CPU
+Optimizing NNI: done in 191.026 secs using 591.5% CPU
+Optimizing NNI: done in 188.532 secs using 572.7% CPU
+Optimizing NNI: done in 104.704 secs using 581.8% CPU
+Optimizing NNI: done in 196.825 secs using 582.6% CPU
+Optimizing NNI: done in 243.683 secs using 590.4% CPU
+Optimizing NNI: done in 209.196 secs using 588.1% CPU
+Iteration 210 / LogL: -835657.572 / Time: 14h:55m:10s (2h:4m:11s left)
+Optimizing NNI: done in 234.009 secs using 591.6% CPU
+Optimizing NNI: done in 190.768 secs using 588.9% CPU
+Optimizing NNI: done in 188.074 secs using 585.1% CPU
+Optimizing NNI: done in 234.026 secs using 588.3% CPU
+Optimizing NNI: done in 263.88 secs using 577.7% CPU
+Optimizing NNI: done in 259.061 secs using 587.3% CPU
+Optimizing NNI: done in 254.568 secs using 591.2% CPU
+Optimizing NNI: done in 243.621 secs using 589.3% CPU
+Optimizing NNI: done in 162.434 secs using 591.5% CPU
+Optimizing NNI: done in 226.128 secs using 587.1% CPU
+Iteration 220 / LogL: -835663.793 / Time: 15h:32m:53s (1h:20m:55s left)
+Optimizing NNI: done in 222.378 secs using 591.1% CPU
+Optimizing NNI: done in 253.141 secs using 586.6% CPU
+Optimizing NNI: done in 235.586 secs using 574.3% CPU
+Optimizing NNI: done in 244.016 secs using 591% CPU
+Optimizing NNI: done in 246.611 secs using 592% CPU
+Optimizing NNI: done in 269.459 secs using 591.6% CPU
+Optimizing NNI: done in 169.436 secs using 590.3% CPU
+Optimizing NNI: done in 239.793 secs using 590.2% CPU
+Optimizing NNI: done in 244.476 secs using 509.9% CPU
+Optimizing NNI: done in 169.171 secs using 473.5% CPU
+Iteration 230 / LogL: -836009.797 / Time: 16h:11m:13s (0h:38m:9s left)
+Optimizing NNI: done in 126.089 secs using 412.2% CPU
+Optimizing NNI: done in 307.037 secs using 478.4% CPU
+Optimizing NNI: done in 125.179 secs using 471.6% CPU
+Optimizing NNI: done in 133.722 secs using 454.4% CPU
+Optimizing NNI: done in 179.818 secs using 481.8% CPU
+Optimizing NNI: done in 226.34 secs using 476.1% CPU
+Optimizing NNI: done in 199.558 secs using 487.4% CPU
+Optimizing NNI: done in 147.268 secs using 485.7% CPU
+Optimizing NNI: done in 195.74 secs using 485.3% CPU
+Optimizing NNI: done in 376.255 secs using 169.7% CPU
+Iteration 240 / LogL: -835692.343 / Time: 16h:44m:53s (0h:-4m:-13s left)
+TREE SEARCH COMPLETED AFTER 240 ITERATIONS / Time: 16h:44m:53s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -835618.499
+Current log-likelihood at step 1: -835618.466
+Current log-likelihood at step 2: -835618.453
+Current log-likelihood at step 3: -835618.446
+Partition-specific rates:  1.527 0.332 1.175 2.389
+Parameters optimization took 2 rounds (57.232 sec)
+
+Partition information was printed to partition.txt.best_model.nex
+BEST SCORE FOUND : -835618.446
+Total tree length: 40.428
+
+Total number of iterations: 240
+CPU time used for tree search: 300498.096 sec (83h:28m:18s)
+Wall-clock time used for tree search: 59616.849 sec (16h:33m:36s)
+Total CPU time used: 304105.164 sec (84h:28m:25s)
+Total wall-clock time used: 60351.412 sec (16h:45m:51s)
+
+Analysis results written to: 
+  IQ-TREE report:                partition.txt.iqtree
+  Maximum-likelihood tree:       partition.txt.treefile
+  Likelihood distances:          partition.txt.mldist
+  Screen log file:               partition.txt.log
+
+ALISIM COMMAND
+--------------
+--alisim simulated_MSA -t partition.txt.treefile -p partition.txt.best_model.nex
+
+Date and Time: Tue Jun 21 09:16:59 2022
+• built target iqtreerun
+• end pipeline: 16.77 hours
+> 
+> proc.time()
+      user     system    elapsed 
+304219.393   4764.547  60378.715 
