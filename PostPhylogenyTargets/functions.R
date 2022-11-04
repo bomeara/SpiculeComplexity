@@ -37,6 +37,8 @@ dateRaxmlTree <- function(phy) {
 
 getPaleoDBTree <- function() {
 	paleodb_phy <- paleotree::makePBDBtaxonTree(paleotree::getCladeTaxaPBDB("Porifera"), rankTaxon = "species")
+	#paleodb_phy <- paleotree::makePBDBtaxonTree(paleotree::getCladeTaxaPBDB("Porifera"), rankTaxon = "species", method="Linnean", APIversion="1.1")
+
 	return(paleodb_phy)
 }
 
