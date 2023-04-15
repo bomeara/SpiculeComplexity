@@ -1,0 +1,9 @@
+Combined tree created with the following files:
+
+	18s/ 18s_block1.nex
+	     18s_block2.nex
+
+	28s/ Our_28s_cleaned_post_ginsi_recleaned.nex
+
+	COI/ COI_realigned_post_ginsi_cleaned.nex
+	
