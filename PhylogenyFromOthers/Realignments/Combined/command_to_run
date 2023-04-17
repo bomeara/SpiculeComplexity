@@ -1,0 +1,1 @@
+iqtree2 -s Combined_genes_BCO_prune.fasta -p Partition.txt -m MF+MERGE -nt AUTO
