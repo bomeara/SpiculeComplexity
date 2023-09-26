@@ -8,7 +8,7 @@ Clathrina primordialis,Calcarea,no,one spicule type but great size variation,Ext
 Borojevia croatica,Calcarea,yes ,no,Extant,301-Article Text-1584-1-10-20160302,0,0,0,NA,NA
 Farrea bowerbanki,Hex,no,Some vestigial rays noted,Extant,boury-esnault_et_al_2017hexactinellida,0,0,0,NA,NA
 Tretodictyum reiswigi,Hex,no,no,Extant,boury-esnault_et_al_2017hexactinellida,0,0,0,NA,NA
-Haljalaspongia inaudita,Hex,yes ,distinct layers,Fossil,SG143_001-014,455.8,460.9,458.35,no,no_data
+Haljalaspongia inaudita,Hex,yes ,distinct layers,Fossil,SG143_001-014,455.8,460.9,458.35,No,no_data
 Leucandra falakra,Calcarea,yes ,Giant spicules; pairing,Extant,301-Article Text-1584-1-10-20160302,0,0,0,NA,NA
 Hymedesmia anatoliensis,Demo,no,no,Extant,zoo-39-4-2-1312-40,0,0,0,NA,NA
 Neofibularia chinensis,Demo,no,no,Extant,"Pulitzer-Finali,_1982b",0,0,0,NA,NA
@@ -156,3 +156,5 @@ Endostoma mexicana,Calcarea,no,all monaxons assumed to be oxeas due to some bein
 Mammillopora encrusta,Calcarea,no,triactines not preserved in all parts of sponge,Fossil,1304269,109,112.03,110.515,No,no
 Sontheimia parasitica,Demo,yes ,some desmas; unclear if distinct,Fossil,A Callovian Middle Jurassic Poriferan Fauna…,163.5,166.1,164.8,No,genus_only
 Jereica tuberculosa,Demo,no,no,Fossil,A Callovian Middle Jurassic Poriferan Fauna…,163.5,166.1,164.8,No,genus_only
+Soleneiscus hamatus,Calcarea,no,no,Extant,S12526-017-0671-x,0,0,0,NA,NA
+Petrobiona massiliana,Calcarea,no,no,Extant,Sponges of marine caves…,0,0,0,NA,NA
